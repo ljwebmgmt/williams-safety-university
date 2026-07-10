@@ -111,6 +111,26 @@
 
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
+            <div class="facets__disclosure js-filter" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(var(--color-foreground),.1); padding-bottom: 1.5rem;">
+              <div class="facets__summary" style="font-weight: bold; margin-bottom: 1rem; font-size: 1.4rem; text-transform: uppercase; letter-spacing: .1rem;">
+                Search
+              </div>
+              <div class="sidebar-search-wrapper" style="display: flex; flex-direction: column; gap: 10px;">
+                <input 
+                  type="text" 
+                  id="SidebarSearchInput" 
+                  placeholder="Search By Name" 
+                  style="width: 100%; padding: 10px; border: 1px solid rgba(var(--color-foreground),.2); font-size: 1.4rem;"
+                />
+                <button 
+                  type="button" 
+                  id="SidebarSearchSubmit" 
+                  style="width: 100%; padding: 10px; background-color: #002D62; color: #fff; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; font-size: 1.2rem;"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
             {%- for filter in results.filters -%}
               {% liquid
                 assign total_active_values = total_active_values | plus: filter.active_values.size
