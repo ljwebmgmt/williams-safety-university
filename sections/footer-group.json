@@ -17,12 +17,12 @@
         "image_G97Knx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/LOGO_copy.jpg",
-            "footer_description": "<p><strong>Disclaimer:</strong> OSHASCORM.org is a private company offering OSHA safety training courses in SCORM format. Our courses are compatible with SCORM-supported Learning Management Systems (LMS), but we are not affiliated with the official OSHA website at <a href=\"https://www.osha.gov/laws-regs.\" target=\"_blank\" title=\"https://www.osha.gov/laws-regs.\">https://www.osha.gov</a><br/><br/><em>Subsidiary Partnership</em><br/><br/>OSHASCORM.org operates as a subsidiary of <a href=\"https://ictraining.us/\" target=\"_blank\" title=\"https://ictraining.us/\">Industrial Certified Training, LLC</a>, a company specializing in workplace safety training. We partner with <a href=\"https://hazwoper-osha.com/\" target=\"_blank\" title=\"https://hazwoper-osha.com/\">HAZWOPER OSHA Training, LLC</a> to provide a comprehensive selection of OSHA compliance courses.</p>",
+            "image": "shopify://shop_images/william-safety-logo-removebg-preview.png",
+            "footer_description": "<p><strong>Disclaimer:</strong> Williams Safety & Rescue is a private company offering OSHA safety training courses in SCORM format. Our courses are compatible with SCORM-supported Learning Management Systems (LMS), but we are not affiliated with the official OSHA website at <a href=\"https://www.osha.gov/laws-regs.\" target=\"_blank\" title=\"https://www.osha.gov/laws-regs.\">https://www.osha.gov</a><br/><br/><em>Subsidiary Partnership</em><br/><br/>Williams Safety & Rescue operates as a subsidiary of <a href=\"https://ictraining.us/\" target=\"_blank\" title=\"https://ictraining.us/\">Industrial Certified Training, LLC</a>, a company specializing in workplace safety training. We partner with <a href=\"https://hazwoper-osha.com/\" target=\"_blank\" title=\"https://hazwoper-osha.com/\">HAZWOPER OSHA Training, LLC</a> to provide a comprehensive selection of OSHA compliance courses.</p>",
             "image_width": 280,
             "alignment": "",
             "mob-alignment": "mob-left",
-            "image_invert": false,
+            "image_invert": true,
             "image_copyright": false,
             "show_social_image": false,
             "block_width_image": 33
@@ -33,7 +33,7 @@
           "disabled": true,
           "settings": {
             "heading": "Training Series",
-            "menu": "training-series",
+            "menu": "",
             "block_width_link": 40,
             "menu_twocol": true
           }
@@ -43,9 +43,7 @@
           "settings": {
             "show_social": true,
             "block_width_brand": 25,
-            "footer_logo": "shopify://shop_images/CornerStone-Services-Better-Business-Bureau-A-Rating_png_eac7ae05-5b3b-4b92-9cb5-7d1c05ae9bba.webp",
             "footer_logo_link": "https://www.bbb.org/us/ca/los-angeles/profile/online-education/hazwoper-osha-training-1216-1424720",
-            "footer_logo2": "shopify://shop_images/IACET-small_ceec1b41-1428-4f50-a620-613018b046f2.webp",
             "footer_logo_link2": "https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618",
             "footer_logo3": "<a href=\"https://www.shopify.com/security/pci-compliant?utm_medium=shop&utm_source=secure\" title=\"This online store is secured by Shopify\" target=\"_blank\" rel=\"nofollow\">\n                          <img src=\"https://cdn.shopify.com/s/images/badges/shopify-secure-badge-white.svg\" alt=\"Shopify secure badge\">\n                        </a>"
           }
@@ -71,7 +69,7 @@
         "padding_bottom": 36,
         "copyright_after": "All rights reserved.",
         "hide_bottom_footer": false,
-        "bot_links": "footer-payment-links"
+        "bot_links": ""
       }
     }
   },
