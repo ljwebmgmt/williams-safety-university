@@ -1,0 +1,165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "duration_pxUWff": {
+          "type": "duration",
+          "settings": {}
+        },
+        "key_details_KYLfVX": {
+          "type": "key_details",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "text_79yxxg": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<strong>Click Here if you require less than 10 seats</strong>",
+            "text_style": "body"
+          }
+        },
+        "custom_liquid_xmPwhp": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div data-tf-live=\"01KQT04NW5P1TRJ6ZT3BJE0MC3\"></div>\n<div data-tf-live=\"01KQW16KK89X5P3QXEXCB0SSMY\"></div>",
+            "custom_classes": "btn-grp"
+          }
+        },
+        "custom_liquid_nLEazx": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.clickhereurl %}\n<div style=\"text-align:center;\">  <a style=\"text-decoration:none; color:#02458b96; font-weight:700;\" \n     href=\"{{ product.metafields.custom.clickhereurl }}\">\n    Click Here\n  </a>\n  <strong> if you require less than 10 seats</strong></div>\n{% endif %}",
+            "custom_classes": ""
+          }
+        },
+        "money_back_HHNeEd": {
+          "type": "money_back",
+          "settings": {
+            "text_1": "Relax - you're covered by our",
+            "text_2": "30-Day Money Back Guarantee",
+            "img_logo": "shopify://shop_images/LOGO_copy.jpg",
+            "img_person": "shopify://shop_images/OSHA_employee.webp",
+            "heading1": "Be certain with our",
+            "heading2": "360° Guarantee®",
+            "heading3": "You're covered from every angle.",
+            "content1": "<h4><strong>Guaranteed </strong>delivery</h4><p>We promise on-time delivery within 24 hours after successful payment. If we miss the deadline, your order is free.</p>",
+            "content2": "<h4><strong>Guaranteed </strong>value</h4><p>If you find a lower price elsewhere within 30 days of purchase, let us know, and we'll refund the difference and then some.</p>",
+            "content3": "<h4><strong>Guaranteed </strong>happiness</h4><p>If you're not 100% satisfied with your order, we'll work with you to make it right or refund your money—your choice.</p>",
+            "img_signature": "shopify://shop_images/kevinsig.gif",
+            "ceo_name": "Kevin Taylor, General Manager"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "custom_desc": "<p>To ensure compatibility, feel free to <a href=\"https://1drv.ms/u/c/ac63876456a07d06/IQC1d7DNuuTnS4RgtDAB9ZQQAQ5KN8BxVgBwsd1S7ipzUp4?e=M5Daub\" target=\"_blank\" title=\"https://1drv.ms/u/c/ac63876456a07d06/IQC1d7DNuuTnS4RgtDAB9ZQQAQ5KN8BxVgBwsd1S7ipzUp4?e=M5Daub\">download our free sample SCORM 1.2 package</a> and test it within your own LMS.</p><p></p>"
+          }
+        },
+        "video_UzbK8K": {
+          "type": "video",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "duration_pxUWff",
+        "key_details_KYLfVX",
+        "variant_picker",
+        "price",
+        "quantity_selector",
+        "buy_buttons",
+        "text_79yxxg",
+        "custom_liquid_xmPwhp",
+        "custom_liquid_nLEazx",
+        "money_back_HHNeEd",
+        "description",
+        "video_UzbK8K"
+      ],
+      "settings": {
+        "needmore": "https://ljweb.typeform.com/to/LH12ugbu",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}

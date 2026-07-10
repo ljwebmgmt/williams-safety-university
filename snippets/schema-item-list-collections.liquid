@@ -1,0 +1,48 @@
+{%- comment -%}
+  Renders ItemList JSON-LD for collection-list section blocks.
+  Accepts: section, list_name
+{%- endcomment -%}
+{%- liquid
+  assign list_title = list_name | default: 'Training Collections'
+  assign item_count = 0
+  for block in section.blocks
+    if block.settings.collection != blank
+      assign item_count = item_count | plus: 1
+    endif
+  endfor
+-%}
+{%- if item_count > 0 -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": {{ list_title | json }},
+      "numberOfItems": {{ item_count }},
+      "itemListElement": [
+        {%- assign schema_position = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- assign listed_collection = block.settings.collection -%}
+          {%- if listed_collection != blank -%}
+            {%- if schema_position > 0 -%},{%- endif -%}
+            {
+              "@type": "ListItem",
+              "position": {{ schema_position | plus: 1 }},
+              "item": {
+                "@type": "Collection",
+                "name": {{ listed_collection.title | json }},
+                "url": {{ request.origin | append: listed_collection.url | json }}
+                {%- if listed_collection.description != blank -%}
+                  ,"description": {{ listed_collection.description | strip_html | truncate: 250 | json }}
+                {%- endif -%}
+                {%- if listed_collection.featured_image -%}
+                  ,"image": {{ listed_collection.featured_image | image_url: width: 600 | prepend: 'https:' | json }}
+                {%- endif -%}
+              }
+            }
+            {%- assign schema_position = schema_position | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+      ]
+    }
+  </script>
+{%- endif -%}

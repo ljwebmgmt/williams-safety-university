@@ -1,0 +1,52 @@
+{%- comment -%}
+  Merchant listing fields for Product Offer JSON-LD (Google Rich Results).
+  Accepts: product, variant (optional), currency (optional)
+{%- endcomment -%}
+{%- liquid
+  assign offer_variant = variant | default: product.selected_or_first_available_variant
+  assign offer_currency = currency | default: cart.currency.iso_code
+  assign price_valid_year = 'now' | date: '%Y' | plus: 1
+  assign price_valid_until = price_valid_year | append: '-12-31'
+-%}
+,"itemCondition": "https://schema.org/NewCondition"
+,"priceValidUntil": {{ price_valid_until | json }}
+,"seller": {
+  "@type": "Organization",
+  "name": {{ shop.name | json }},
+  "url": {{ shop.url | json }}
+}
+,"shippingDetails": {
+  "@type": "OfferShippingDetails",
+  "shippingRate": {
+    "@type": "MonetaryAmount",
+    "value": "0",
+    "currency": {{ offer_currency | json }}
+  },
+  "deliveryTime": {
+    "@type": "ShippingDeliveryTime",
+    "handlingTime": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 1,
+      "unitCode": "DAY"
+    },
+    "transitTime": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 0,
+      "unitCode": "DAY"
+    }
+  },
+  "shippingDestination": {
+    "@type": "DefinedRegion",
+    "addressCountry": "US"
+  }
+}
+,"hasMerchantReturnPolicy": {
+  "@type": "MerchantReturnPolicy",
+  "applicableCountry": "US",
+  "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+  "merchantReturnDays": 30,
+  "returnMethod": "https://schema.org/ReturnByMail",
+  "returnFees": "https://schema.org/FreeReturn"
+}

@@ -1,0 +1,532 @@
+{%- liquid
+  assign social_icons = true
+  if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
+    assign social_icons = false
+  endif
+  if section.settings.enable_country_selector or section.settings.enable_language_selector
+    assign language_country_selector = true
+  endif
+  if section.blocks.size > 0
+    assign announcement_bar = true
+  endif
+-%}
+
+{% comment %} {{ 'ss-top-bar.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+{% if social_icons %}
+  {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+
+{% endif %}
+
+<div
+  class="hdr-top-bar utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
+    
+    {% comment %}
+    {%- if section.blocks.size == 1 -%}
+      <div
+        class="announcement-bar{% if section.settings.show_social %} announcement-bar--one-announcement{% endif %}"
+        role="region"
+        aria-label="{{ 'sections.header.announcement' | t }}"
+        {{ block.shopify_attributes }}
+      >
+        {%- if section.blocks.first.settings.text != blank -%}
+          {%- if section.blocks.first.settings.link != blank -%}
+            <a
+              href="{{ section.blocks.first.settings.link }}"
+              class="announcement-bar__link link link--text focus-inset animate-arrow"
+            >
+          {%- endif -%}
+          <p class="announcement-bar__message h5">
+            <span><img src="{{ section.blocks.first.settings.image | image_url }}" width="25" height="25">{{ section.blocks.first.settings.text | escape }}</span>
+            {%- if section.blocks.first.settings.link != blank -%}
+              {% render 'icon-arrow' %}
+            {%- endif -%}
+          </p>
+          {%- if section.blocks.first.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+      
+    {%- elsif section.blocks.size > 1 -%}
+
+    {% endcomment %}
+
+    {%- if section.blocks -%}
+
+      <div class="announcement-bar">
+        {%- for block in section.blocks -%}
+          <div class="topbar-item{% if block.settings.inv_img %} img-invert{% endif %}{% if block.settings.hide_mobile %} hide-mobile{% endif %} {{ block.settings.alignment }}" role="region" style="width:{{ block.settings.item-width }}%;" {{ block.shopify_attributes }}>
+            {%- if block.settings.text != blank -%}
+              {%- if block.settings.link != blank -%}
+                <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow{% if block.type == 'item-modal' %} popup-link{% endif %}">
+              {%- endif -%}
+              
+              {% if block.type == 'item-modal' %}
+                <a class="modal-popup">
+              {% endif %}
+
+              <p class="announcement-bar__message topbar-item-inner">
+                {%- if block.settings.image != blank -%}
+                <img class="icon-img{% if block.settings.hide_img_mobile %} hide-mobile{% endif %}" src="{{ block.settings.image | image_url }}" width="{{ block.settings.img-size }}" height="{{ block.settings.img-size }}"> {%- endif -%}
+                <span style="margin-left:{{ block.settings.img-space }}px;">{{ block.settings.text | escape }}</span>
+                {% comment %}{%- if block.settings.link != blank -%}
+                  {% render 'icon-arrow' %}
+                {%- endif -%}{% endcomment %}
+              </p>
+
+              {% if block.type == 'item-modal' %}
+                </a>
+              {% endif %}
+
+              {%- if block.settings.link != blank -%}
+                </a>
+              {%- endif -%}
+            {%- endif -%}
+
+            {% if block.type == 'item-modal' %}
+
+              <div class="modalbox-overlay"> </div>
+              <div class="modalbox">
+                <button type="button" class="modal__close js-modal-close text-link"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+                      <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor"></path>
+                  </svg>
+                </button>
+                <h3 class="modal-title">{{ block.settings.modal_title }}</h3>
+                <p class="modal-content">{{ block.settings.modal_text }}</p>
+                {%- if block.settings.modal_map != blank -%}
+                  <div class="modal-map">{{ block.settings.modal_map }}</div>
+                {%- endif -%}
+              </div>
+            {% endif %}
+
+            {% if block.type == 'menu' %}
+              <ul class="list-menu list-menu--inline" role="list">
+                {%- for link in block.settings.menu.links -%}
+                  <li>
+                    <a
+                    id="topMenu-{{ link.handle }}"
+                    href="{{ link.url }}"
+                    class="topbar-menu header__menu-item list-menu__item link link--text focus-inset"
+                    {% if link.current %}
+                      aria-current="page"
+                    {% endif %}
+                  >
+                      <span
+                        {%- if link.current %}
+                          class="header__active-menu-item"
+                        {% endif %}
+                      >
+                        {{- link.title | escape -}}
+                      </span>
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {% endif %}
+
+          </div>
+          
+          
+
+        {%- endfor -%}
+      </div>
+    
+    {%- endif -%}
+
+    <div class="localization-wrapper">
+      {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+        <noscript class="small-hide medium-hide">
+          {%- form 'localization', id: 'AnnouncementCountryMobileFormNoScript', class: 'localization-form' -%}
+            <div class="localization-form__select">
+              <span class="visually-hidden" id="AnnouncementCountryMobileLabelNoScript">
+                {{ 'localization.country_label' | t }}
+              </span>
+              <select
+                class="localization-selector link"
+                name="country_code"
+                aria-labelledby="AnnouncementCountryMobileLabelNoScript"
+              >
+                {%- for country in localization.available_countries -%}
+                  <option
+                    value="{{ country.iso_code }}"
+                    {%- if country.iso_code == localization.country.iso_code %}
+                      selected
+                    {% endif %}
+                  >
+                    {{ country.name }} ({{ country.currency.iso_code }}
+                    {{ country.currency.symbol }})
+                  </option>
+                {%- endfor -%}
+              </select>
+              {% render 'icon-caret' %}
+            </div>
+            <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
+          {%- endform -%}
+        </noscript>
+
+        <localization-form class="small-hide medium-hide no-js-hidden">
+          {%- form 'localization', id: 'AnnouncementCountryForm', class: 'localization-form' -%}
+            <div>
+              <span class="visually-hidden" id="AnnouncementCountryLabel">{{ 'localization.country_label' | t }}</span>
+              {%- render 'country-localization', localPosition: 'AnnouncementCountry' -%}
+            </div>
+          {%- endform -%}
+        </localization-form>
+      {% endif %}
+
+      {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+        <noscript class="small-hide medium-hide">
+          {%- form 'localization', id: 'AnnouncementLanguageMobileFormNoScript', class: 'localization-form' -%}
+            <div class="localization-form__select">
+              <h2 class="visually-hidden" id="AnnouncementLanguageMobileLabelNoScript">
+                {{ 'localization.language_label' | t }}
+              </h2>
+              <select
+                class="localization-selector link"
+                name="locale_code"
+                aria-labelledby="AnnouncementLanguageMobileLabelNoScript"
+              >
+                {%- for language in localization.available_languages -%}
+                  <option
+                    value="{{ language.iso_code }}"
+                    lang="{{ language.iso_code }}"
+                    {%- if language.iso_code == localization.language.iso_code %}
+                      selected
+                    {% endif %}
+                  >
+                    {{ language.endonym_name | capitalize }}
+                  </option>
+                {%- endfor -%}
+              </select>
+              {% render 'icon-caret' %}
+            </div>
+            <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+          {%- endform -%}
+        </noscript>
+
+        <localization-form class="small-hide medium-hide no-js-hidden">
+          {%- form 'localization', id: 'AnnouncementLanguageForm', class: 'localization-form' -%}
+            <div>
+              <h2 class="visually-hidden" id="AnnouncementLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+              {%- render 'language-localization', localPosition: 'AnnouncementLanguage' -%}
+            </div>
+          {%- endform -%}
+        </localization-form>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.show_social and social_icons -%}
+      {%- render 'social-icons' -%}
+    {%- endif -%}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Top Bar",
+  "class": "top-bar-section",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-4"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_line_separator",
+      "default": true,
+      "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.header__1.content",
+      "info": "t:sections.announcement-bar.settings.header__1.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social",
+      "default": false,
+      "label": "t:sections.announcement-bar.settings.show_social.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.header__3.content",
+      "info": "t:sections.announcement-bar.settings.header__3.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "default": false,
+      "label": "t:sections.announcement-bar.settings.enable_country_selector.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.header__4.content",
+      "info": "t:sections.announcement-bar.settings.header__4.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "default": false,
+      "label": "t:sections.announcement-bar.settings.enable_language_selector.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "New Item",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Add Image"
+        },
+        {
+          "type": "range",
+          "id": "img-size",
+          "label": "Image",
+          "default": 22, 
+          "min": 10,       
+          "max": 60
+        },
+        {
+          "type": "range",
+          "id": "img-space",
+          "label": "Space Between Image Text",
+          "default": 12, 
+          "min": 0,       
+          "max": 30
+        },
+        {
+          "type": "checkbox",
+          "id": "inv_img",
+          "default": false,
+          "label": "Invert Image"
+        },
+        {
+          "type": "range",
+          "id": "item-width",
+          "label": "Width",
+          "default": 20, 
+          "min": 0,       
+          "max": 100
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Content Alignment",
+          "options": [
+            {
+              "value": "align-left",
+              "label": "Left"
+            },
+            {
+              "value": "align-center",
+              "label": "Center"
+            },
+            {
+              "value": "align-right",
+              "label": "Right"
+            }
+          ],
+          "default": "align-center"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "default": false,
+          "label": "Hide on Mobile",
+          "info" : "Select this to hide item in mobile devices"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_img_mobile",
+          "default": false,
+          "label": "Hide Image on Mobile",
+          "info" : "Select this to hide image mobile devices"
+        }
+      ]
+    },
+    {
+      "type": "item-modal",
+      "name": "Item Popup",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "New Item",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Add Image"
+        },
+        {
+          "type": "range",
+          "id": "img-size",
+          "label": "Image",
+          "default": 22, 
+          "min": 10,       
+          "max": 60
+        },
+        {
+          "type": "range",
+          "id": "img-space",
+          "label": "Space Between Image Text",
+          "default": 12, 
+          "min": 0,       
+          "max": 30
+        },
+        {
+          "type": "checkbox",
+          "id": "inv_img",
+          "default": false,
+          "label": "Invert Image"
+        },
+        {
+          "type": "range",
+          "id": "item-width",
+          "label": "Width",
+          "default": 20, 
+          "min": 0,       
+          "max": 100
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Content Alignment",
+          "options": [
+            {
+              "value": "align-left",
+              "label": "Left"
+            },
+            {
+              "value": "align-center",
+              "label": "Center"
+            },
+            {
+              "value": "align-right",
+              "label": "Right"
+            }
+          ],
+          "default": "align-center"
+        },
+        {
+          "type": "text",
+          "id": "modal_title",
+          "default": "New Item",
+          "label": "Pop Up Title"
+        },
+        {
+          "type": "textarea",
+          "id": "modal_text",
+          "default": "New Item Content",
+          "label": "Pop Up Content"
+        },
+        {
+          "type": "textarea",
+          "id": "modal_map",
+          "label": "Add Map Embed Code"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "default": false,
+          "label": "Hide on Mobile",
+          "info" : "Select this to hide item in mobile devices"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_img_mobile",
+          "default": false,
+          "label": "Hide Image on Mobile",
+          "info" : "Select this to hide image mobile devices"
+        }        
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "menu",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "default": "main-menu",
+          "label": "t:sections.header.settings.menu.label"
+        },
+        {
+          "type": "range",
+          "id": "item-width",
+          "label": "Width",
+          "default": 20, 
+          "min": 0,       
+          "max": 100,
+          "step": 1
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Content Alignment",
+          "options": [
+            {
+              "value": "align-left",
+              "label": "Left"
+            },
+            {
+              "value": "align-center",
+              "label": "Center"
+            },
+            {
+              "value": "align-right",
+              "label": "Right"
+            }
+          ],
+          "default": "align-center"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "default": false,
+          "label": "Hide on Mobile",
+          "info" : "Select this to hide item in mobile devices"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top Bar",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item-modal"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

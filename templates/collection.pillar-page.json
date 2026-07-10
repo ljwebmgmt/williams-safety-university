@@ -1,0 +1,201 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_x3qGzm": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_X6nc8C": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.pillar_heading.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_eGCJ67": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.pillar_content.value }}",
+            "text_style": "body"
+          }
+        },
+        "custom_button_Qq6Ua3": {
+          "type": "custom_button",
+          "settings": {
+            "custom_button_label": "Explore Courses",
+            "html": "#collection-products-grid",
+            "current_page_link": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_X6nc8C",
+        "text_eGCJ67",
+        "custom_button_Qq6Ua3"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "{{ collection.metafields.custom.pillar_image_banner_1.value }}",
+        "image_2": "{{ collection.metafields.custom.pillar_image_banner_2.value }}",
+        "image_overlay_opacity": 50,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_UEY6bP": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_UJdgB6": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.pillar_heading_2.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_AjwLGe": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.pillar_content_2 | metafield_tag }}",
+            "text_style": "body"
+          }
+        },
+        "button_NdwMpa": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "{{ collection.metafields.custom.pillar_button_2.value }}",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UJdgB6",
+        "text_AjwLGe",
+        "button_NdwMpa"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "{{ collection.metafields.custom.pillar_image_banner_3.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_naLA7g": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ULnqPr": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>{{ collection.metafields.custom.hazwoper_training_content_1 | metafield_tag }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rh6EaE": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "{{ collection.metafields.custom.hazwoper_training_content_2 | metafield_tag }}",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_thyN89": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "{{ collection.metafields.custom.hazwoper_training_content_3 | metafield_tag }}",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ULnqPr",
+        "column_rh6EaE",
+        "column_thyN89"
+      ],
+      "custom_css": [
+        ".rte ul {list-style-position: outside; padding-left: 40px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "{{ collection.metafields.custom.hazwoper_training_content_heading.value }}",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 16,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_x3qGzm",
+    "image_with_text_UEY6bP",
+    "multicolumn_naLA7g",
+    "banner",
+    "product-grid"
+  ]
+}

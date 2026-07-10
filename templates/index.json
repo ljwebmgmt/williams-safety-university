@@ -1,0 +1,913 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ss_slideshow_datKgQ": {
+      "type": "ss-slideshow",
+      "blocks": {
+        "slide_WtahfW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/AdobeStock_867181340_copy.webp",
+            "image_mobile": "shopify://shop_images/AdobeStock_543734675.jpg",
+            "heading": "Empower your workforce with OSHA-compliant SCORM trainings designed for corporate LMS platforms",
+            "heading_size": "h1",
+            "subheading": "Our courses help organizations ensure workplace safety, regulatory compliance, and standardized employee training through ready-to-deploy SCORM packages into your LMS",
+            "button_label": "ENROLL NOW",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/1bd9f96e664848db85665586fc3aab84.mp4",
+            "video_poster": "shopify://shop_images/safety_scorm_d24e94bd-7610-4bf9-8c33-40e88916285f_1.webp",
+            "link": "shopify://collections",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_6aGnzL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/AdobeStock_924889218_copy.jpg",
+            "heading": "Benefits of SCORM for OSHA Training",
+            "heading_size": "h2",
+            "subheading": "<strong>Convenient, Flexible, and Cost-Effective OSHA Online Training. </strong>Streamline your safety compliance with SCORM-based eLearning solutions that offer easy tracking, comprehensive reporting, and effective training outcomes.",
+            "button_label": "ENROLL NOW",
+            "video_url": "",
+            "link": "shopify://collections",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_4KCpmN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/OSHA_SCORM_slide3_61541fb5-07df-4f26-8c49-72728df830cf_1.webp",
+            "heading": "Trusted OSHA Training, Designed for Success",
+            "heading_size": "h2",
+            "subheading": "Join countless organizations that trust our OSHA SCORM packages to deliver high-quality, engaging, and effective training to their employees.",
+            "button_label": "ENROLL NOW",
+            "video_url": "",
+            "link": "shopify://collections",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_WtahfW",
+        "slide_6aGnzL",
+        "slide_4KCpmN"
+      ],
+      "custom_css": [
+        "h2.banner__heading.inline-richtext.h1 {font-size: 29px;}",
+        ".banner__text.rte p {font-size: 16px; line-height: 20px;}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_align": true,
+        "slider_visual": "dots",
+        "hide_arrows": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "home slider",
+        "custom_classes": "herosection-slider"
+      }
+    },
+    "multicolumn_tBK8cm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_AnQWbh": {
+          "type": "column",
+          "settings": {
+            "title": "Training Providers & Course Resellers",
+            "text": "<p><br/>You run a training business or LMS and want ready-to-sell compliance courses without building content from scratch.<br/><br/>Our SCORM packages allow you to <strong>expand your catalog instantly</strong> and deliver OSHA, DOT, and EPA training under your own brand or licensing model.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3FKm9e": {
+          "type": "column",
+          "settings": {
+            "title": "Corporate L&D & HR Teams",
+            "text": "<p><br/>If you manage employee training and compliance internally, our SCORM courses integrate directly into your LMS.<br/><br/>Assign training, track completion, and ensure your workforce stays compliant with <strong>OSHA and regulatory requirements</strong>.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iHHWPr": {
+          "type": "column",
+          "settings": {
+            "title": "LMS Owners",
+            "text": "<p><br/>If you operate an LMS and need plug-and-play content, our SCORM packages are fully compatible with major platforms.<br/><br/>Simply upload, assign, and start tracking learner progress immediately.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_AnQWbh",
+        "column_3FKm9e",
+        "column_iHHWPr"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Who Is This For",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Explore Trainings",
+        "button_link": "shopify://collections/all",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1776764229803b4d6e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f4eaa1c_kaRNck": {
+          "type": "ai_gen_block_f4eaa1c",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding": 30,
+            "background_color": "#ffffff",
+            "title": "How SCORM Delivery Works",
+            "subtitle": "Simple, LMS-Ready Training in 5 Steps",
+            "title_size": 36,
+            "subtitle_size": 16,
+            "title_color": "#121212",
+            "subtitle_color": "#666666",
+            "header_spacing": 40,
+            "show_numbers": true,
+            "show_icons": true,
+            "steps_top_spacing": 40,
+            "step_spacing": 15,
+            "step_padding": 25,
+            "step_background_color": "#f9f9f9",
+            "step_border_radius": 8,
+            "step_border_width": 3,
+            "step_border_color": "#e0e0e0",
+            "number_size": 50,
+            "number_font_size": 20,
+            "number_background_color": "#334fb4",
+            "number_text_color": "#ffffff",
+            "icon_size": 50,
+            "icon_color": "#334fb4",
+            "icon_spacing": 20,
+            "step_title_size": 16,
+            "step_description_size": 12,
+            "step_title_color": "#121212",
+            "step_description_color": "#666666",
+            "step_1_title": "Select Courses",
+            "step_1_description": "Choose from our compliance library with real-time pricing.",
+            "step_2_title": "Set Seat Count - Place your Order",
+            "step_2_description": "Select learner seats — licensed per user per year and place your order",
+            "step_3_title": "Receive Your SCORM Package (ZIP File)",
+            "step_3_description": "After purchase, your course is delivered as a SCORM 1.2 / SCORM 2004 ZIP file via Email",
+            "step_4_title": "Upload to Your LMS",
+            "step_4_description": "Upload the SCORM ZIP file directly into your LMS. No technical setup or customization is required.",
+            "step_5_title": "Assign & Track Learner Progress",
+            "step_5_description": "Once uploaded, you can assign the course to learners and track progress."
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f4eaa1c_kaRNck"
+      ],
+      "settings": {}
+    },
+    "ss_collection_list_9aTtPC": {
+      "type": "ss-collection-list",
+      "blocks": {
+        "featured_collection_NwaeBf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hazwoper-training-29-cfr-1910-120"
+          }
+        },
+        "featured_collection_Ldf6Ln": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rcra-hazardous-waste-management"
+          }
+        },
+        "featured_collection_JBV84F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nfpa-70e-electrical-arc-flash-safety"
+          }
+        },
+        "featured_collection_TmYJe3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "osha-construction-safety-training-series"
+          }
+        },
+        "featured_collection_y6rxD4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ammonia-refrigeration-training"
+          }
+        },
+        "featured_collection_cpz6QQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hazmat-training-dot-iata-imdg-transportation"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_NwaeBf",
+        "featured_collection_Ldf6Ln",
+        "featured_collection_JBV84F",
+        "featured_collection_TmYJe3",
+        "featured_collection_y6rxD4",
+        "featured_collection_cpz6QQ"
+      ],
+      "settings": {
+        "title": "Industrial Training and Compliance Series",
+        "heading_size": "h2",
+        "heading_align": "align-center",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 36,
+        "custom_classes": "scormcollectionlist"
+      }
+    },
+    "multicolumn_c84YJT": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9FrEQq": {
+          "type": "column",
+          "settings": {
+            "title": "Ready-to-Deploy",
+            "image_icon": "shopify://shop_images/paper.png",
+            "text": "<p><br/>We offer one of the <strong>largest libraries</strong> of SCORM-compliant safety training courses covering HAZWOPER, RCRA, OSHA, DOT, HAZMAT, MSHA, NFPA 70E and more — all <strong>prepackaged and ready for upload</strong> into any Learning Management System. Perfect for companies needing fast, scalable compliance solutions.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BjJCm8": {
+          "type": "column",
+          "settings": {
+            "title": "Fully White-Labeled",
+            "image_icon": "shopify://shop_images/man.png",
+            "text": "<p><br/>Every course comes with <strong>white-labeling options</strong>, enabling businesses to <strong>brand trainings as their own</strong> while ensuring OSHA compliance. Plus, courses include <strong>quizzes, tracking features, and completion certificates</strong> to support audits and employee records.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AyQh9Q": {
+          "type": "column",
+          "settings": {
+            "title": "SCORM Compatibility (1.2 & 2004)",
+            "image_icon": "shopify://shop_images/Layer_2.png",
+            "text": "<p><br/>Whether you use Moodle, TalentLMS, Blackboard, or any SCORM-based LMS, OSHASCORM.org provides <strong>enterprise-level licensing</strong> with <strong>seamless SCORM 1.2 and 2004 integration</strong>, ongoing updates, and bulk licensing support for HR, Safety, and Training departments.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9FrEQq",
+        "column_BjJCm8",
+        "column_AyQh9Q"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Built for Safety. Designed for Scalability.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Read our Frequently Asked Questions",
+        "button_link": "https://oshascorm.org/pages/faq",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_featured_collection_TXQEmH": {
+      "type": "ss-featured-collection",
+      "settings": {
+        "title": "Best Selling Safety Courses",
+        "heading_size": "h2",
+        "heading_align": "align-center",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-selling-courses",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "layout": "grid",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 36,
+        "custom_classes": "scormfeaturedcollection"
+      }
+    },
+    "ss_review_slider_mGMMf7": {
+      "type": "ss-review-slider",
+      "blocks": {
+        "review_DHd9HL": {
+          "type": "review",
+          "settings": {
+            "heading": "Kelvin Sidaway",
+            "heading_size": "h2",
+            "image_rev": "shopify://shop_images/Kelvin_Sidaway_73772dc1-b652-44ef-afb5-95703e3900ce.jpg",
+            "handle": "Managing Director",
+            "subheading": "Industrial Certified Training's vast library of 1500+ SCORM-compliant courses is a game-changer for safety and compliance. Their user-friendly platform and proactive customer support make managing our training programs a breeze. We've seen significant improvements in employee knowledge and confidence since implementing their OSHA, DOT, EPA, and HAZMAT courses.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "review_Cte9bH": {
+          "type": "review",
+          "settings": {
+            "heading": "Tamara Parris",
+            "heading_size": "h2",
+            "image_rev": "shopify://shop_images/Tamara_Parris_a4ebd190-a7c1-4bc1-8737-97bcaa288a3e.jpg",
+            "handle": "International HSE/Risk Leader",
+            "subheading": "Industrial Certified Training's pre-built SCORM courses have revolutionized our training efficiency. Their QHSSE content is engaging and informative, leading to improved employee performance. We appreciate their dedicated customer support team who has been a valuable resource.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "review_qttVLX": {
+          "type": "review",
+          "settings": {
+            "heading": "Daryl Kellenberger",
+            "heading_size": "h2",
+            "image_rev": "shopify://shop_images/Daryl_Kellenberger_628aa2c5-e75d-401b-9f97-62d68b578ab5.jpg",
+            "handle": "Global Vice President",
+            "subheading": "Industrial Certified Training has exceeded our expectations in providing top-notch HSSE and HSSEQ training. Their SCORM-compatible courses are easy to implement and have made a measurable impact on our safety performance. The customer support team is knowledgeable and always goes the extra mile.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "review_EBKXy9": {
+          "type": "review",
+          "settings": {
+            "heading": "Craig Paton",
+            "heading_size": "h2",
+            "image_rev": "shopify://shop_images/Craig_Paton.jpg",
+            "handle": "Corporate Safety Director",
+            "subheading": "Industrial Certified Training has been instrumental in enhancing our safety culture. Their comprehensive range of SCORM-based OHS, HSE, EHS, and SHE courses ensures our workforce is fully prepared. The platform's easy integration and exceptional customer support have streamlined our training process.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "review_mCJJmi": {
+          "type": "review",
+          "settings": {
+            "heading": "Heather Beach",
+            "heading_size": "h2",
+            "image_rev": "shopify://shop_images/Heather_Beach_151c9f78-ec53-4ebf-8cc9-f82d9aa7070f.jpg",
+            "handle": "Director HSE  Compliance",
+            "subheading": "As a partner in safety, Industrial Certified Training has been invaluable. Their extensive library of SCORM-based courses, including OSHA, DOT, EPA, and HAZMAT, ensures our compliance and protects our workforce. Their proactive customer support fosters a strong partnership.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "review_jtA3Fp": {
+          "type": "review",
+          "settings": {
+            "heading": "Steven Harris",
+            "heading_size": "h2",
+            "image_rev": "shopify://shop_images/Steven_Harris_14808c85-90ba-433f-8379-30659db2edfa.jpg",
+            "handle": "Division Manager",
+            "subheading": "Industrial Certified Training offers a comprehensive solution for our training needs. Their 1500+ SCORM courses cover OSHA, DOT, EPA, HAZMAT, and other essential topics. The platform's ease of use and exceptional customer support make it a top choice for organizations seeking efficient and effective training.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "review_DHd9HL",
+        "review_Cte9bH",
+        "review_qttVLX",
+        "review_EBKXy9",
+        "review_mCJJmi",
+        "review_jtA3Fp"
+      ],
+      "settings": {
+        "title": "Customer Reviews",
+        "heading_size": "h2",
+        "heading_align": "align-center",
+        "description": "",
+        "description_align": "align-center",
+        "layout": "grid",
+        "slider_visual": "counter",
+        "section_color_scheme": "scheme-1",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 48,
+        "padding_bottom": 64,
+        "custom_classes": "scormreviewslider"
+      }
+    },
+    "ss_cta_YzketX": {
+      "type": "ss-cta",
+      "blocks": {
+        "heading_baAf6W": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ready to be Trained",
+            "heading_size": "h1"
+          }
+        },
+        "text_fnzpPe": {
+          "type": "text",
+          "settings": {
+            "text": "If so, start by creating an account and you’ll be on your way to certification!",
+            "text_style": "body"
+          }
+        },
+        "buttons_MKNpMd": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Enroll Now",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_baAf6W",
+        "text_fnzpPe",
+        "buttons_MKNpMd"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/ready-to-be-trained-man_1.webp",
+        "image_fit": "contain",
+        "image_position": "right",
+        "image_layout": "grid",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "bg_color": "#fff2bd",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "ss_logo_slider_6TYnE4": {
+      "type": "ss-logo-slider",
+      "blocks": {
+        "logo_NWhKq8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/fbi-logo.svg",
+            "subheading": "",
+            "link": ""
+          }
+        },
+        "logo_MD6j8z": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/us-army-logo.svg",
+            "subheading": "",
+            "link": ""
+          }
+        },
+        "logo_t9brGR": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/water-meter.svg",
+            "subheading": "",
+            "link": ""
+          }
+        },
+        "logo_GgyRzC": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/nasa-logo.svg",
+            "subheading": "",
+            "link": ""
+          }
+        },
+        "logo_MnLyAe": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/us-sailors-logo.svg",
+            "subheading": "",
+            "link": ""
+          }
+        },
+        "logo_aU7q4M": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/pfizer-logo.svg",
+            "subheading": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_NWhKq8",
+        "logo_MD6j8z",
+        "logo_t9brGR",
+        "logo_GgyRzC",
+        "logo_MnLyAe",
+        "logo_aU7q4M"
+      ],
+      "settings": {
+        "title": "Trusted by Organizations",
+        "heading_size": "h2",
+        "heading_align": "align-center",
+        "description": "<p>Become a member of our community, along with thousands of businesses of all sizes.</p>",
+        "description_align": "align-center",
+        "layout": "grid",
+        "section_color_scheme": "scheme-1",
+        "auto_rotate": false,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "custom_classes": "scormlogoslider"
+      }
+    },
+    "collapsible_content_xtwHNg": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_HmLwpP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is SCORM and how does it work? ",
+            "icon": "none",
+            "row_content": "<p>SCORM (Shareable Content Object Reference Model) is a set of technical standards used to create and deliver online training content. SCORM guides programmers on how to write their code so it can seamlessly integrate with other eLearning software. It is the de facto industry standard for eLearning interoperability, specifically governing the communication between online learning content and Learning Management Systems (LMSs). SCORM focuses solely on technical standards and does not address instructional design or any other content-related aspects.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3HWyC3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the Different Versions of SCORM and how do they differ?",
+            "icon": "none",
+            "row_content": "<p>Below is a brief overview of the main SCORM versions: </p><p><strong>1. SCORM 1.1</strong> </p><ul><li>The earliest version, introduced to standardize how learning content communicates with an LMS. </li><li>Had limited adoption due to initial technical complexities. </li></ul><p><strong>2. SCORM 1.2 </strong></p><ul><li>The most widely implemented version for many years and still in extensive use. </li><li>Streamlined various issues found in SCORM 1.1 and provided more reliable data tracking. </li></ul><p><strong>3. SCORM 2004</strong> </p><ul><li>Introduced advanced capabilities like sequencing and navigation controls. </li><li>Released in multiple “editions” (1st through 4th) which refined and clarified specifications. </li><li>The 4th edition is the most current iteration under the SCORM 2004 umbrella. </li></ul><p>Although SCORM 1.2 remains common in legacy systems, SCORM 2004 (particularly 4th Edition) is considered more robust, with its enhanced tracking and content navigation features. Depending on your LMS and organizational needs, you may choose one version over the other. If you are looking for newer approaches to tracking learner experiences, you might also explore newer standards like xAPI (Tin Can) or cmi5, though these fall outside the strict SCORM family. </p><p>Each version builds upon the previous one and introduces new features and improvements. For example, SCORM 1.2 added support for multimedia content, while SCORM 2004 added support for more advanced tracking and reporting capabilities. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BtWm68": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why Should I Use SCORM?",
+            "icon": "none",
+            "row_content": "<p>Using SCORM (Sharable Content Object Reference Model) offers several benefits for eLearning content creation and delivery: </p><p><strong>1. Interoperability:</strong> SCORM ensures that your eLearning content can work seamlessly across different Learning Management Systems (LMSs), making it easy to share and distribute. </p><p><strong>2. Reusability:</strong> SCORM-compliant content can be reused across multiple courses and platforms, saving time and resources in content creation. </p><p><strong>3. Consistency:</strong> By adhering to SCORM standards, you ensure a consistent learning experience for users, regardless of the LMS they use. </p><p><strong>4. Tracking and Reporting:</strong> SCORM enables detailed tracking of learner progress and performance, providing valuable data for assessments and improvements. </p><p><strong>5. Cost-Effectiveness:</strong> SCORM's interoperability and reusability reduce the need for custom development, lowering overall costs for eLearning projects. </p><p><strong>6. Industry Standard:</strong> As the de facto industry standard for eLearning interoperability, using SCORM ensures your content meets widely accepted technical requirements. </p><p>By using SCORM, you enhance the flexibility, scalability, and efficiency of your eLearning programs, providing a better experience for both learners and administrators. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Vw6aLY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I receive a SCORM package?",
+            "icon": "none",
+            "row_content": "<p>The standard SCORM package is generated according to the SCORM 1.2 /SCORM 2004 (4th edition) standards, depending on the option you select, and will be shared with you within 24 hours after you complete your order. </p><p>Custom branded SCORM package takes up to 7 business days after you place the order. </p><p>We generally send a link from which you must download the SCORM package for your use. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GLnhwe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can SCORM be integrated with my Learning Management System (LMS) ",
+            "icon": "none",
+            "row_content": "<p>Integrating SCORM with your Learning Management System (LMS) is quite easy, provided you have the necessary access permissions to the LMS! Please follow the following steps: </p><p><strong>1. Upload SCORM Package to LMS:</strong> Log in to your LMS and locate the option to add or upload a new course/module. Select the SCORM package (ZIP file) and upload it to the LMS. </p><p><strong>2. Configure Course Settings:</strong> Configure the course settings in your LMS, such as course name, description, enrollment options, and tracking preferences. Ensure the SCORM-specific settings are correct, such as completion criteria, scoring, and reporting options. </p><p><strong>3. Test the Integration:</strong> Test the uploaded SCORM package to ensure it functions correctly within the LMS. Verify that the content loads properly, interactions work as intended, and tracking/reporting features are operational. </p><p><strong>4. Deploy to Learners:</strong> Once you’ve confirmed that everything is working correctly, assign the course to your learners. Provide necessary instructions or support to help them access and navigate the SCORM content. </p><p><strong>5. Monitor and Report:</strong> Use the LMS’s reporting and analytics features to monitor learner progress and performance. SCORM-compliant courses will provide detailed tracking data, such as completion status, quiz/exam scores, and time spent on each module. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_N4bMWV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will the SCORM package work on all Learning Management Systems?",
+            "icon": "none",
+            "row_content": "<p>Most modern LMS platforms support SCORM 1.2 or SCORM 2004. However, it is always best to confirm compatibility with your LMS provider or test our demo module before purchasing. </p><p>Over the years, we have worked with a variety of LMSs. Below is a short list of platforms where we have successfully implemented our SCORM packages. </p><ol><li>Docebo </li><li>TalentLMS </li><li>Absorb LMS </li><li>SAP Litmos </li><li>Cornerstone OnDemand </li><li>Moodle Workplace </li><li>iSpring Learn </li><li>LearnUpon </li><li>SkyPrep </li><li>eFront </li><li>Blackboard Learn </li><li>Canvas LMS </li><li>Schoology </li><li>Edmodo </li><li>Brightspace by D2L </li><li>Thinkific </li><li>Teachable </li><li>Kajabi </li><li>Coursera for Business </li><li>Udemy Business </li><li>Google Classroom </li><li>Microsoft Learn </li><li>Pluralsight </li><li>Looop </li><li>360Learning </li><li>Trainual </li><li>Tovuti LMS </li><li>Northpass </li><li>LearnDash </li><li>TalentCards </li><li>Bridge LMS </li><li>Paradiso LMS </li><li>Skilljar </li><li>Litmos Heroes </li><li>Saba Cloud </li><li>Open edX </li><li>Totara Learn </li><li>GyrusAim </li><li>Path LMS </li><li>Kallidus </li><li>Mindflash </li><li>CYPHER Learning </li><li>Coassemble </li><li>WizIQ </li><li>ProProfs LMS </li><li>Skillsoft </li><li>Myicourse </li><li>Udacity for Enterprise </li><li>Raven360 </li><li>KMI Learning </li><li>Skillport </li><li>Firmwater LMS </li><li>LatitudeLearning </li><li>BlueVolt </li><li>Accord LMS </li><li>ExpertusONE </li><li>Velpic </li><li>Knowledge Anywhere </li><li>Learnster </li><li>LearnWorlds </li><li>Inquisiq </li><li>Administrate </li><li>TalentSoft </li><li>Quampus </li><li>JoomlaLMS </li><li>Opigno </li><li>Forma LMS </li><li>Claroline </li><li>CourseMill </li><li>TrainCaster </li><li>Chamilo </li><li>Rustici Software </li><li>Accessplanit </li><li>Easy LMS </li><li>eLeap LMS </li><li>FrontCore </li><li>Knowledge Direct </li><li>Travitor </li><li>Ruzuku </li><li>MoodleCloud </li><li>Knewton Alta </li><li>G-Cube LMS </li><li>EdApp </li><li>Xyleme </li><li>BrainCert </li><li>Eloomi </li><li>LearnPlatform </li><li>Agylia </li><li>Learnosity </li><li>PeopleFluent LMS </li><li>Intellum Platform </li><li>Miva LMS </li><li>MedTrainer </li><li>LearnSpeed </li><li>Newrow </li><li>EdTek LMS </li><li>Obsidian Learning </li><li>Spayee </li><li>Neo LMS </li><li>Juno LMS </li></ol>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WgyLYp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why SCORM Compliance Matters for LMS?",
+            "icon": "none",
+            "row_content": "<p>SCORM compliance is crucial for LMS platforms because it ensures seamless functionality and compatibility across different systems. With SCORM-compliant content, organizations can switch LMS providers without losing access to their learning materials, as these modules are designed to work universally. This flexibility also allows content to be reused across various departments, saving time and resources. </p><p>Additionally, SCORM compliance guarantees a consistent and standardized learning experience for users, regardless of the platform. Furthermore, SCORM-compliant LMSs track learners’ progress and performance, providing valuable insights into course completion rates and learner engagement, which are essential for optimizing training strategies.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QPkwVd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can you customize the SCORM package for us?",
+            "icon": "none",
+            "row_content": "<p>Yes, we offer SCORM packages that can be customized with your corporate branding. This is called the White Label option where we can incorporate your company’s logo, color schema and contact information.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jJWFQ8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does SCORM handle version control when updating course content?",
+            "icon": "none",
+            "row_content": "<p>While SCORM itself doesn’t include automatic version control, our <strong>cloud-based SCORM approach</strong> allows us to update course content on the fly. This means you <strong>do not</strong> have to download a new SCORM package or reassign updated training every time changes are made. Once we push an update, your learners automatically see the revised content in your LMS, ensuring your courses stay current with minimal administrative effort on your end. If you ever need to preserve older versions, we can handle that behind the scenes without disrupting your existing setup.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JfYwQY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I purchase a course through OSHASCORM.org?",
+            "icon": "none",
+            "row_content": "<p>Once you select a course, use our interactive slider seat selector to choose the required seats. Adjust the quantity to see real-time pricing with discounts and complete your purchase instantly. After your order is received, you’ll receive a OneDrive link to download the SCORM package, which you can seamlessly integrate into your Learning Management System (LMS) for immediate access and tracking.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JyC9VT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you provide support for the installation of the SCORM package to our Learning Management System (LMS)?",
+            "icon": "none",
+            "row_content": "<p>Over the years our support team has worked with 100s of LMSs and is well versed with various learning management systems - so yes, we will be happy to assist free of charge.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3exrRf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What support do you provide if something goes wrong?",
+            "icon": "none",
+            "row_content": "<p>We offer technical support to help resolve installation or performance issues. Our team is available via email and phone during business hours, and we strive to provide prompt assistanceto ensure seamless integration and functionality.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QXKWRA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the SCORM package include interactive elements like quizzes, videos, and simulations?",
+            "icon": "none",
+            "row_content": "<p>Yes, our SCORM packages include interactive elements such as quizzes, videos, and simulations to enhance learner engagement and retention.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Xf3CY7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I share or resell my SCORM Package with the third party?",
+            "icon": "none",
+            "row_content": "<p>No, our agreement is with only you (your organization). The license agreement is prepared according to these terms.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fyefBJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it possible to adjust or make changes to the SCORM package once it’s been uploaded into our LMS?",
+            "icon": "none",
+            "row_content": "<p>Regrettably, you do not have the capability to independently modify the course content. Should you require any modifications, please don't hesitate to contact us, and we'll be more than happy to assist, subject to a nominal fee.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_xxgwKt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I get my safety training SCORM package updated when there is a change or update in State/Federal Regulations regarding occupational safety and health requirements?",
+            "icon": "none",
+            "row_content": "<p>It is our policy to regularly review OSHA, DOT, EPA, and other state and federal regulations related to the safety training courses we offer. Accordingly, we continually update and upgrade our courses to reflect the latest changes and other training requirements. </p><p>For an annual maintenance fee, we provide an auto-update function that eliminates the need for any action on your part. This ensures that your employees will always have access to the latest training content.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pYQrJC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is there a file size limit for SCORM packages when uploading to an LMS?",
+            "icon": "none",
+            "row_content": "<p>Most LMS platforms allow fairly large SCORM packages. However, because our SCORM solution is <strong>cloud-based</strong>, the package you upload to your LMS is typically <strong>under 1MB</strong>. We host and deliver the actual content from the cloud at runtime, meaning you won’t run into file size limitations during upload, and your learners won’t be downloading large files directly from the LMS.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qzY7Uc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I test a sample SCORM package on my LMS before purchasing?",
+            "icon": "none",
+            "row_content": "<p>Yes, we provide a demo SCORM package so you can test compatibility with your LMS before making a purchase. <span style=\"text-decoration:underline\">Link for Demo</span></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KMpXkT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I deploy the SCORM content on multiple LMSs or only one?",
+            "icon": "none",
+            "row_content": "<p> Our SCORM packages are licensed for a single LMS unless specified otherwise.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jzxtKU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can SCORM content be accessed on mobile devices and tablets? ",
+            "icon": "none",
+            "row_content": "<p>Yes, SCORM content can be accessed on mobile devices and tablets, provided the LMS supports responsive design and HTML5 compatibility.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_z9K3i6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does SCORM handle user progress when a learner switches devices?",
+            "icon": "none",
+            "row_content": "<p>SCORM stores learner progress and interaction data within the LMS, allowing users to resume from where they left off, even when switching devices.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tDWnJA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do the SCORM courses come in any other languages, except English?",
+            "icon": "none",
+            "row_content": "<p>We do offer certain courses in Spanish, please reach out to us for more information.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dNrC4j": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are we required to purchase SCORM packages in different languages separately?",
+            "icon": "none",
+            "row_content": "<p>Yes, the SCORM package training courses developed for different languages are considered as separate licenses.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_cgJpnH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I track detailed learner analytics with SCORM reporting?",
+            "icon": "none",
+            "row_content": "<p> SCORM tracks data like completion status, time spent, quiz scores, and interaction details, which can be accessed through the LMS reporting dashboard for performance analysis.The exact data reported depends on your LMS capabilities.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fQJwaG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What security measures does SCORM offer to protect course content and learner data?",
+            "icon": "none",
+            "row_content": "<p>SCORM packages are hosted within an LMS, which typically provides access controls, data encryption, and secure login mechanisms to protect content and learner data.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dJE9Cc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does SCORM support adaptive learning paths and personalized experiences?",
+            "icon": "none",
+            "row_content": "<p>SCORM2004 introduced the Sequencing and Navigation features, which enable conditional rules to guide learners through content based on their progress or performance. For example, you can require learners to complete a quiz before unlocking the next module or route them to a remedial module if they score below a certain threshold. These rules let you create more personalized, adaptive learning experiences by dynamically adjusting each learner’s path according to their individual needs and mastery level. While SCORM isn’t a full adaptive-learning framework, leveraging its sequencing logic allows you to build learner-specific journeys without extensive custom programming.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pNyqzi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What role does SCORM play in ensuring compliance for corporate training programs?",
+            "icon": "none",
+            "row_content": "<p> SCORM plays a pivotal role in <strong>corporate compliance training</strong> by ensuring <strong>consistent, trackable content delivery</strong> across an organization. By standardizing how courses communicate with an LMS, SCORM enables employers to: </p><p><strong>1. Accurately Track Completion and Performance</strong> </p><ul><li>SCORM captures whether each employee has started, partially completed, or finished a course. It can also record quiz scores, time spent in modules, and other performance metrics. </li><li>This data is crucial for demonstrating to regulators or auditors that mandated training has been successfully delivered and completed. </li></ul><p> </p><p><strong>2. Simplify Reporting and Record-Keeping</strong> </p><ul><li>Because SCORM content automatically reports completion status back to the LMS, administrators have a clear record of compliance across all required training programs. </li><li>In the event of an audit or legal inquiry, these records can be easily retrieved to confirm that employees met the necessary training requirements on schedule. </li></ul><p><strong>3. Support Organizational Consistency</strong> </p><ul><li>With SCORM-compliant courses, each employee—regardless of location or device—receives the same standardized content and assessment. </li><li>Consistent training delivery helps eliminate gaps that could otherwise lead to compliance issues. </li></ul><p><strong>4. Enable Ongoing Monitoring and Updates</strong> </p><ul><li>If regulations change, SCORM-based courses can be swiftly updated in one place, ensuring that new requirements are rolled out to all employees simultaneously. </li><li>Real-time tracking and reporting allow compliance officers to see who has taken updated courses and whether additional follow-up is needed. </li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_HmLwpP",
+        "collapsible_row_3HWyC3",
+        "collapsible_row_BtWm68",
+        "collapsible_row_Vw6aLY",
+        "collapsible_row_GLnhwe",
+        "collapsible_row_N4bMWV",
+        "collapsible_row_WgyLYp",
+        "collapsible_row_QPkwVd",
+        "collapsible_row_jJWFQ8",
+        "collapsible_row_JfYwQY",
+        "collapsible_row_JyC9VT",
+        "collapsible_row_3exrRf",
+        "collapsible_row_QXKWRA",
+        "collapsible_row_Xf3CY7",
+        "collapsible_row_fyefBJ",
+        "collapsible_row_xxgwKt",
+        "collapsible_row_pYQrJC",
+        "collapsible_row_qzY7Uc",
+        "collapsible_row_KMpXkT",
+        "collapsible_row_jzxtKU",
+        "collapsible_row_z9K3i6",
+        "collapsible_row_tDWnJA",
+        "collapsible_row_dNrC4j",
+        "collapsible_row_cgJpnH",
+        "collapsible_row_fQJwaG",
+        "collapsible_row_dJE9Cc",
+        "collapsible_row_pNyqzi"
+      ],
+      "settings": {
+        "caption": "",
+        "custom_class": "faq-row faqs-home",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "enable_faq_schema": true,
+        "faq_schema_limit": 5,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "enable_read_more": true,
+        "accordion_limit": 5,
+        "read_more_text": "Read More",
+        "read_more_link": "shopify://pages/faq"
+      }
+    }
+  },
+  "order": [
+    "ss_slideshow_datKgQ",
+    "multicolumn_tBK8cm",
+    "1776764229803b4d6e",
+    "ss_collection_list_9aTtPC",
+    "multicolumn_c84YJT",
+    "ss_featured_collection_TXQEmH",
+    "ss_review_slider_mGMMf7",
+    "ss_cta_YzketX",
+    "ss_logo_slider_6TYnE4",
+    "collapsible_content_xtwHNg"
+  ]
+}

@@ -1,0 +1,95 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "ss_top_bar_CNdg9k": {
+      "type": "ss-top-bar",
+      "blocks": {
+        "item_CUW7xW": {
+          "type": "item",
+          "settings": {
+            "text": "1-866-429-6742",
+            "image": "shopify://shop_images/telephone.png",
+            "img-size": 22,
+            "img-space": 12,
+            "inv_img": false,
+            "item-width": 15,
+            "link": "tel:1-866-429-6742",
+            "alignment": "align-left",
+            "hide_mobile": false,
+            "hide_img_mobile": false
+          }
+        },
+        "item_BpHYy6": {
+          "type": "item",
+          "settings": {
+            "text": "info@oshascorm.org",
+            "image": "shopify://shop_images/mail.png",
+            "img-size": 22,
+            "img-space": 12,
+            "inv_img": false,
+            "item-width": 15,
+            "link": "mailto:info@HAZWOPER-OSHA.com",
+            "alignment": "align-left",
+            "hide_mobile": false,
+            "hide_img_mobile": false
+          }
+        },
+        "menu_hKarT3": {
+          "type": "menu",
+          "settings": {
+            "menu": "top-bar-menu",
+            "item-width": 70,
+            "alignment": "align-right",
+            "hide_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "item_CUW7xW",
+        "item_BpHYy6",
+        "menu_hKarT3"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_line_separator": true,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "drawer",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "support_phone": "1-866-429-6742",
+        "support_email": "info@oshascorm.org",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "ss_top_bar_CNdg9k",
+    "header"
+  ]
+}

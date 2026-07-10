@@ -1,0 +1,590 @@
+{% doc %}
+  @prompt
+    How it works section with 5 steps , Please update the icons as per the content i updates and put numbers on the upper left side of each box , please create section for this content with icons 
+    How SCORM Delivery Works
+    Simple, LMS-Ready Training in 5 Steps
+    Step 1: Select Courses
+    Choose from our compliance library with real-time pricing.
+    Step 2: Set Seat Count
+    Define learner seats — licensed per user per year.
+    Step3: Receive Your SCORM Package (ZIP File)
+    After purchase, your course is delivered as a SCORM 1.2 / SCORM 2004 ZIP file.
+    Step 4: Upload to Your LMS
+    Upload the SCORM ZIP file directly into your LMS. No technical setup or customization is required.
+    Step 5: Assign & Track Learner Progress
+    Once uploaded, you can assign the course to learners and track progress
+    
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-scorm-delivery-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-scorm-delivery-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-scorm-delivery-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-scorm-delivery-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 16px;
+    font-weight: 600;
+  }
+
+  .ai-scorm-delivery-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ai-scorm-delivery-steps-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.step_spacing }}px;
+    margin-top: {{ block.settings.steps_top_spacing }}px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ai-scorm-delivery-step-{{ ai_gen_id }} {
+    text-align: center;
+    padding: {{ block.settings.step_padding }}px;
+    background-color: {{ block.settings.step_background_color }};
+    border-radius: {{ block.settings.step_border_radius }}px;
+    position: relative;
+    width:calc( 20% - {{ block.settings.step_spacing }}px );
+    border: {{ block.settings.step_border_width }}px solid {{ block.settings.step_border_color }};
+  }
+
+  .ai-scorm-delivery-step-number-{{ ai_gen_id }} {
+    position: absolute;
+    top: {{ block.settings.step_padding }}px;
+    left: {{ block.settings.step_padding }}px;
+    width: {{ block.settings.number_size }}px;
+    height: {{ block.settings.number_size }}px;
+    background-color: {{ block.settings.number_background_color }};
+    color: {{ block.settings.number_text_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: {{ block.settings.number_font_size }}px;
+    font-weight: 700;
+  }
+
+  .ai-scorm-delivery-step-icon-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    margin: 0 auto {{ block.settings.icon_spacing }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-scorm-delivery-step-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    stroke: {{ block.settings.icon_color }};
+    fill: none;
+  }
+
+  .ai-scorm-delivery-step-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_title_size }}px;
+    color: {{ block.settings.step_title_color }};
+    margin: 0 0 12px;
+    font-weight: 600;
+  }
+
+  .ai-scorm-delivery-step-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_description_size }}px;
+    color: {{ block.settings.step_description_color }};
+    margin: 0;
+    line-height: 1.6;
+  }
+@media screen and (max-width: 1100px) {
+    .ai-scorm-delivery-step-{{ ai_gen_id }} {
+      width:calc( 33.33% - {{ block.settings.step_spacing }}px );
+    }
+  }
+ 
+  @media screen and (max-width: 749px) {
+    .ai-scorm-delivery-step-{{ ai_gen_id }} {
+        width:calc( 50% - {{ block.settings.step_spacing }}px );
+    }
+    .ai-scorm-delivery-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+
+    .ai-scorm-delivery-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+  }
+   @media screen and (max-width: 640px) {
+    .ai-scorm-delivery-step-{{ ai_gen_id }} {
+        width:100%;
+    }
+  }
+{% endstyle %}
+
+<scorm-delivery-{{ ai_gen_id }} class="ai-scorm-delivery-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-scorm-delivery-container-{{ ai_gen_id }}">
+    <div class="ai-scorm-delivery-header-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-scorm-delivery-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+      {% if block.settings.subtitle != blank %}
+        <div class="ai-scorm-delivery-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+      {% endif %}
+    </div>
+
+    <div class="ai-scorm-delivery-steps-{{ ai_gen_id }}">
+      {% for i in (1..5) %}
+        {% liquid
+          assign step_title_key = 'step_' | append: i | append: '_title'
+          assign step_description_key = 'step_' | append: i | append: '_description'
+          assign step_title = block.settings[step_title_key]
+          assign step_description = block.settings[step_description_key]
+        %}
+
+        <div class="ai-scorm-delivery-step-{{ ai_gen_id }}">
+          {% if block.settings.show_numbers %}
+            <div class="ai-scorm-delivery-step-number-{{ ai_gen_id }}">{{ i }}</div>
+          {% endif %}
+
+          {% if block.settings.show_icons %}
+            <div class="ai-scorm-delivery-step-icon-{{ ai_gen_id }}">
+              {% case i %}
+                {% when 1 %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 11l3 3L22 4"></path>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                {% when 2 %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                {% when 3 %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                {% when 4 %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                    <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                    <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                {% when 5 %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 11l3 3 8-8"></path>
+                    <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+              {% endcase %}
+            </div>
+          {% endif %}
+
+          <h3 class="ai-scorm-delivery-step-title-{{ ai_gen_id }}">{{ step_title }}</h3>
+          <div class="ai-scorm-delivery-step-description-{{ ai_gen_id }}">{{ step_description }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</scorm-delivery-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ScormDelivery{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('scorm-delivery-{{ ai_gen_id }}', ScormDelivery{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "SCORM delivery steps",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "How SCORM Delivery Works"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Simple, LMS-Ready Training in 5 Steps"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "label": "Header spacing",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Steps"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_numbers",
+      "label": "Show step numbers",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_icons",
+      "label": "Show step icons",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "steps_top_spacing",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "step_spacing",
+      "label": "Space between steps",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "step_padding",
+      "label": "Step padding",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "color",
+      "id": "step_background_color",
+      "label": "Step background color",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "range",
+      "id": "step_border_radius",
+      "label": "Step border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "step_border_width",
+      "label": "Step border width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "step_border_color",
+      "label": "Step border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Step numbers"
+    },
+    {
+      "type": "range",
+      "id": "number_size",
+      "label": "Number circle size",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "number_font_size",
+      "label": "Number font size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "number_background_color",
+      "label": "Number background color",
+      "default": "#334fb4"
+    },
+    {
+      "type": "color",
+      "id": "number_text_color",
+      "label": "Number text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Step icons"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#334fb4"
+    },
+    {
+      "type": "range",
+      "id": "icon_spacing",
+      "label": "Icon spacing",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Step text"
+    },
+    {
+      "type": "range",
+      "id": "step_title_size",
+      "label": "Title size",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "step_description_size",
+      "label": "Description size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "step_title_color",
+      "label": "Title color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "step_description_color",
+      "label": "Description color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Step 1"
+    },
+    {
+      "type": "text",
+      "id": "step_1_title",
+      "label": "Title",
+      "default": "Step 1: Select Courses"
+    },
+    {
+      "type": "textarea",
+      "id": "step_1_description",
+      "label": "Description",
+      "default": "Choose from our compliance library with real-time pricing."
+    },
+    {
+      "type": "header",
+      "content": "Step 2"
+    },
+    {
+      "type": "text",
+      "id": "step_2_title",
+      "label": "Title",
+      "default": "Step 2: Set Seat Count"
+    },
+    {
+      "type": "textarea",
+      "id": "step_2_description",
+      "label": "Description",
+      "default": "Define learner seats — licensed per user per year."
+    },
+    {
+      "type": "header",
+      "content": "Step 3"
+    },
+    {
+      "type": "text",
+      "id": "step_3_title",
+      "label": "Title",
+      "default": "Step 3: Receive Your SCORM Package (ZIP File)"
+    },
+    {
+      "type": "textarea",
+      "id": "step_3_description",
+      "label": "Description",
+      "default": "After purchase, your course is delivered as a SCORM 1.2 / SCORM 2004 ZIP file."
+    },
+    {
+      "type": "header",
+      "content": "Step 4"
+    },
+    {
+      "type": "text",
+      "id": "step_4_title",
+      "label": "Title",
+      "default": "Step 4: Upload to Your LMS"
+    },
+    {
+      "type": "textarea",
+      "id": "step_4_description",
+      "label": "Description",
+      "default": "Upload the SCORM ZIP file directly into your LMS. No technical setup or customization is required."
+    },
+    {
+      "type": "header",
+      "content": "Step 5"
+    },
+    {
+      "type": "text",
+      "id": "step_5_title",
+      "label": "Title",
+      "default": "Step 5: Assign & Track Learner Progress"
+    },
+    {
+      "type": "textarea",
+      "id": "step_5_description",
+      "label": "Description",
+      "default": "Once uploaded, you can assign the course to learners and track progress."
+    }
+  ],
+  "presets": [
+    {
+      "name": "SCORM delivery steps"
+    }
+  ]
+}
+{% endschema %}

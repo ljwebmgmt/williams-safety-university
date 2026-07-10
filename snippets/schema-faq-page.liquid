@@ -1,0 +1,54 @@
+{%- comment -%}
+  Renders FAQPage JSON-LD from collapsible_row blocks.
+  Accepts: section, faq_limit (defaults to all blocks)
+{%- endcomment -%}
+{%- liquid
+  assign max_faqs = faq_limit | default: section.blocks.size
+  assign faq_count = 0
+-%}
+
+{%- capture faq_entities -%}
+  {%- for block in section.blocks -%}
+    {%- assign question_text = block.settings.heading | default: block.settings.page.title | strip -%}
+    {%- if block.type == 'collapsible_row' and question_text != blank and faq_count < max_faqs -%}
+      {%- assign answer_html = block.settings.row_content -%}
+      {%- if block.settings.page != blank -%}
+        {%- assign answer_html = answer_html | append: ' ' | append: block.settings.page.content -%}
+      {%- endif -%}
+      {%- assign answer_text = answer_html
+        | replace: '<br>', ' '
+        | replace: '<br/>', ' '
+        | replace: '<br />', ' '
+        | replace: '</p>', ' '
+        | replace: '</li>', '. '
+        | strip_html
+        | strip_newlines
+        | replace: '  ', ' '
+        | strip
+        | truncate: 5000
+      -%}
+      {%- if answer_text != blank -%}
+        {%- if faq_count > 0 -%},{%- endif -%}
+        {
+          "@type": "Question",
+          "name": {{ question_text | json }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ answer_text | json }}
+          }
+        }
+        {%- assign faq_count = faq_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if faq_count > 0 -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{{ faq_entities }}]
+    }
+  </script>
+{%- endif -%}

@@ -1,0 +1,31 @@
+{%- comment -%} Outputs sameAs JSON array with only non-empty social profile URLs. {%- endcomment -%}
+[
+  {%- assign same_as_first = true -%}
+  {%- assign social_links = settings.social_twitter_link
+    | append: '||'
+    | append: settings.social_facebook_link
+    | append: '||'
+    | append: settings.social_pinterest_link
+    | append: '||'
+    | append: settings.social_instagram_link
+    | append: '||'
+    | append: settings.social_tiktok_link
+    | append: '||'
+    | append: settings.social_tumblr_link
+    | append: '||'
+    | append: settings.social_snapchat_link
+    | append: '||'
+    | append: settings.social_youtube_link
+    | append: '||'
+    | append: settings.social_vimeo_link
+    | split: '||'
+  -%}
+  {%- for social_link in social_links -%}
+    {%- assign cleaned_social_link = social_link | strip -%}
+    {%- if cleaned_social_link != blank and cleaned_social_link != '{}' and cleaned_social_link != '[]' -%}
+      {%- unless same_as_first -%},{%- endunless -%}
+      {{ cleaned_social_link | json }}
+      {%- assign same_as_first = false -%}
+    {%- endif -%}
+  {%- endfor -%}
+]

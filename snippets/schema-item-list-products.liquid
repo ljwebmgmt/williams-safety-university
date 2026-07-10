@@ -1,0 +1,59 @@
+{%- comment -%}
+  Renders ItemList JSON-LD for a product collection.
+  Accepts: collection, list_name, limit
+{%- endcomment -%}
+{%- if collection != blank and collection.products_count > 0 -%}
+  {%- liquid
+    assign item_limit = limit | default: 8
+    if collection.products_count < item_limit
+      assign item_limit = collection.products_count
+    endif
+    assign list_title = list_name | default: collection.title
+  -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": {{ list_title | json }},
+      "url": {{ request.origin | append: collection.url | json }},
+      "numberOfItems": {{ item_limit }},
+      "itemListElement": [
+        {%- for product in collection.products limit: item_limit -%}
+          {%- assign offer_variant = product.selected_or_first_available_variant -%}
+          {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "item": {
+              "@type": "Product",
+              "name": {{ product.title | json }},
+              "url": {{ request.origin | append: product.url | json }}
+              {%- if product.vendor != blank -%}
+                ,"brand": {
+                  "@type": "Brand",
+                  "name": {{ product.vendor | json }}
+                }
+              {%- endif -%}
+              {%- if product.featured_image -%}
+                ,"image": {{ product.featured_image | image_url: width: 600 | prepend: 'https:' | json }}
+              {%- endif -%}
+              {%- if product.description != blank -%}
+                ,"description": {{ product.description | strip_html | truncate: 250 | json }}
+              {%- endif -%}
+              ,"offers": {
+                "@type": "Offer",
+                "url": {{ request.origin | append: product.url | json }},
+                "priceCurrency": {{ cart.currency.iso_code | json }},
+                "price": {{ offer_variant.price | divided_by: 100.0 | json }},
+                "availability": "https://schema.org/{% if offer_variant.available %}InStock{% else %}OutOfStock{% endif %}"
+                {%- if offer_variant.sku != blank -%}
+                  ,"sku": {{ offer_variant.sku | json }}
+                {%- endif -%}
+                {% render 'schema-merchant-offer-extras', product: product, variant: offer_variant %}
+              }
+            }
+          }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ]
+    }
+  </script>
+{%- endif -%}
