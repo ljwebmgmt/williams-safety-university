@@ -9,9 +9,9 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/LOGO_copy.jpg",
-    "logo_mob": "shopify://shop_images/LOGO_copy_2_1.webp",
-    "logo_width": 200,
+    "logo": "shopify://shop_images/Williams_Safety.png",
+    "logo_mob": "shopify://shop_images/Williams_Safety_NO_BG_1.png",
+    "logo_width": 120,
     "favicon": "shopify://shop_images/os.jpg",
     "type_header_font": "poppins_n6",
     "heading_scale": 100,
@@ -144,22 +144,6 @@
       }
     },
     "content_for_index": [],
-    "blocks": {
-      "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
-        "settings": {
-          "button_color": "#0083c6",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
-          "button_icon": "chat_bubble",
-          "button_text": "need_help",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": ""
-        }
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
