@@ -509,6 +509,7 @@
         "logo_MnLyAe",
         "logo_aU7q4M"
       ],
+      "disabled": true,
       "settings": {
         "title": "Trusted by Organizations",
         "heading_size": "h2",
