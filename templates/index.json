@@ -440,6 +440,7 @@
         "buttons_MKNpMd"
       ],
       "settings": {
+        "image": "shopify://shop_images/ready-to-be-trained-man_1.webp",
         "image_fit": "contain",
         "image_position": "right",
         "image_layout": "grid",
