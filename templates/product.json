@@ -35,6 +35,7 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
@@ -46,7 +47,6 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "disabled": true,
           "settings": {}
         },
         "buy_buttons": {
@@ -83,15 +83,12 @@
           "settings": {
             "text_1": "Relax - you're covered by our",
             "text_2": "30-Day Money Back Guarantee",
-            "img_logo": "shopify://shop_images/LOGO_copy.jpg",
-            "img_person": "shopify://shop_images/OSHA_employee.webp",
             "heading1": "Be certain with our",
             "heading2": "360° Guarantee®",
             "heading3": "You're covered from every angle.",
             "content1": "<h4><strong>Guaranteed </strong>delivery</h4><p>We promise on-time delivery within 24 hours after successful payment. If we miss the deadline, your order is free.</p>",
             "content2": "<h4><strong>Guaranteed </strong>value</h4><p>If you find a lower price elsewhere within 30 days of purchase, let us know, and we'll refund the difference and then some.</p>",
             "content3": "<h4><strong>Guaranteed </strong>happiness</h4><p>If you're not 100% satisfied with your order, we'll work with you to make it right or refund your money—your choice.</p>",
-            "img_signature": "shopify://shop_images/kevinsig.gif",
             "ceo_name": "Kevin Taylor, General Manager"
           }
         },
