@@ -15,67 +15,26 @@
         "slide_WtahfW": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/AdobeStock_867181340_copy.webp",
-            "image_mobile": "shopify://shop_images/AdobeStock_543734675.jpg",
+            "image": "shopify://shop_images/william-safety-hero.jpg",
+            "image_mobile": "shopify://shop_images/william-safety-hero.jpg",
             "heading": "Empower your workforce with OSHA-compliant SCORM trainings designed for corporate LMS platforms",
             "heading_size": "h1",
             "subheading": "Our courses help organizations ensure workplace safety, regulatory compliance, and standardized employee training through ready-to-deploy SCORM packages into your LMS",
             "button_label": "ENROLL NOW",
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/1bd9f96e664848db85665586fc3aab84.mp4",
-            "video_poster": "shopify://shop_images/safety_scorm_d24e94bd-7610-4bf9-8c33-40e88916285f_1.webp",
+            "video_url": "",
             "link": "shopify://collections",
             "button_style_secondary": true,
-            "box_align": "middle-left",
+            "box_align": "middle-center",
             "show_text_box": false,
-            "text_alignment": "left",
+            "text_alignment": "center",
             "image_overlay_opacity": 30,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_6aGnzL": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/AdobeStock_924889218_copy.jpg",
-            "heading": "Benefits of SCORM for OSHA Training",
-            "heading_size": "h2",
-            "subheading": "<strong>Convenient, Flexible, and Cost-Effective OSHA Online Training. </strong>Streamline your safety compliance with SCORM-based eLearning solutions that offer easy tracking, comprehensive reporting, and effective training outcomes.",
-            "button_label": "ENROLL NOW",
-            "video_url": "",
-            "link": "shopify://collections",
-            "button_style_secondary": true,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_4KCpmN": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/OSHA_SCORM_slide3_61541fb5-07df-4f26-8c49-72728df830cf_1.webp",
-            "heading": "Trusted OSHA Training, Designed for Success",
-            "heading_size": "h2",
-            "subheading": "Join countless organizations that trust our OSHA SCORM packages to deliver high-quality, engaging, and effective training to their employees.",
-            "button_label": "ENROLL NOW",
-            "video_url": "",
-            "link": "shopify://collections",
-            "button_style_secondary": true,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "slide_WtahfW",
-        "slide_6aGnzL",
-        "slide_4KCpmN"
+        "slide_WtahfW"
       ],
       "custom_css": [
         "h2.banner__heading.inline-richtext.h1 {font-size: 29px;}",
@@ -130,6 +89,9 @@
         "column_AnQWbh",
         "column_3FKm9e",
         "column_iHHWPr"
+      ],
+      "custom_css": [
+        "h2.title {text-align: center; }"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -274,7 +236,6 @@
           "type": "column",
           "settings": {
             "title": "Ready-to-Deploy",
-            "image_icon": "shopify://shop_images/paper.png",
             "text": "<p><br/>We offer one of the <strong>largest libraries</strong> of SCORM-compliant safety training courses covering HAZWOPER, RCRA, OSHA, DOT, HAZMAT, MSHA, NFPA 70E and more — all <strong>prepackaged and ready for upload</strong> into any Learning Management System. Perfect for companies needing fast, scalable compliance solutions.<br/><br/></p>",
             "link_label": "",
             "link": ""
@@ -284,7 +245,6 @@
           "type": "column",
           "settings": {
             "title": "Fully White-Labeled",
-            "image_icon": "shopify://shop_images/man.png",
             "text": "<p><br/>Every course comes with <strong>white-labeling options</strong>, enabling businesses to <strong>brand trainings as their own</strong> while ensuring OSHA compliance. Plus, courses include <strong>quizzes, tracking features, and completion certificates</strong> to support audits and employee records.<br/><br/></p>",
             "link_label": "",
             "link": ""
@@ -294,7 +254,6 @@
           "type": "column",
           "settings": {
             "title": "SCORM Compatibility (1.2 & 2004)",
-            "image_icon": "shopify://shop_images/Layer_2.png",
             "text": "<p><br/>Whether you use Moodle, TalentLMS, Blackboard, or any SCORM-based LMS, OSHASCORM.org provides <strong>enterprise-level licensing</strong> with <strong>seamless SCORM 1.2 and 2004 integration</strong>, ongoing updates, and bulk licensing support for HR, Safety, and Training departments.<br/><br/></p>",
             "link_label": "",
             "link": ""
@@ -363,7 +322,6 @@
           "settings": {
             "heading": "Kelvin Sidaway",
             "heading_size": "h2",
-            "image_rev": "shopify://shop_images/Kelvin_Sidaway_73772dc1-b652-44ef-afb5-95703e3900ce.jpg",
             "handle": "Managing Director",
             "subheading": "Industrial Certified Training's vast library of 1500+ SCORM-compliant courses is a game-changer for safety and compliance. Their user-friendly platform and proactive customer support make managing our training programs a breeze. We've seen significant improvements in employee knowledge and confidence since implementing their OSHA, DOT, EPA, and HAZMAT courses.",
             "button_label": "",
@@ -378,7 +336,6 @@
           "settings": {
             "heading": "Tamara Parris",
             "heading_size": "h2",
-            "image_rev": "shopify://shop_images/Tamara_Parris_a4ebd190-a7c1-4bc1-8737-97bcaa288a3e.jpg",
             "handle": "International HSE/Risk Leader",
             "subheading": "Industrial Certified Training's pre-built SCORM courses have revolutionized our training efficiency. Their QHSSE content is engaging and informative, leading to improved employee performance. We appreciate their dedicated customer support team who has been a valuable resource.",
             "button_label": "",
@@ -393,7 +350,6 @@
           "settings": {
             "heading": "Daryl Kellenberger",
             "heading_size": "h2",
-            "image_rev": "shopify://shop_images/Daryl_Kellenberger_628aa2c5-e75d-401b-9f97-62d68b578ab5.jpg",
             "handle": "Global Vice President",
             "subheading": "Industrial Certified Training has exceeded our expectations in providing top-notch HSSE and HSSEQ training. Their SCORM-compatible courses are easy to implement and have made a measurable impact on our safety performance. The customer support team is knowledgeable and always goes the extra mile.",
             "button_label": "",
@@ -408,7 +364,6 @@
           "settings": {
             "heading": "Craig Paton",
             "heading_size": "h2",
-            "image_rev": "shopify://shop_images/Craig_Paton.jpg",
             "handle": "Corporate Safety Director",
             "subheading": "Industrial Certified Training has been instrumental in enhancing our safety culture. Their comprehensive range of SCORM-based OHS, HSE, EHS, and SHE courses ensures our workforce is fully prepared. The platform's easy integration and exceptional customer support have streamlined our training process.",
             "button_label": "",
@@ -423,7 +378,6 @@
           "settings": {
             "heading": "Heather Beach",
             "heading_size": "h2",
-            "image_rev": "shopify://shop_images/Heather_Beach_151c9f78-ec53-4ebf-8cc9-f82d9aa7070f.jpg",
             "handle": "Director HSE  Compliance",
             "subheading": "As a partner in safety, Industrial Certified Training has been invaluable. Their extensive library of SCORM-based courses, including OSHA, DOT, EPA, and HAZMAT, ensures our compliance and protects our workforce. Their proactive customer support fosters a strong partnership.",
             "button_label": "",
@@ -438,7 +392,6 @@
           "settings": {
             "heading": "Steven Harris",
             "heading_size": "h2",
-            "image_rev": "shopify://shop_images/Steven_Harris_14808c85-90ba-433f-8379-30659db2edfa.jpg",
             "handle": "Division Manager",
             "subheading": "Industrial Certified Training offers a comprehensive solution for our training needs. Their 1500+ SCORM courses cover OSHA, DOT, EPA, HAZMAT, and other essential topics. The platform's ease of use and exceptional customer support make it a top choice for organizations seeking efficient and effective training.",
             "button_label": "",
@@ -508,7 +461,6 @@
         "buttons_MKNpMd"
       ],
       "settings": {
-        "image": "shopify://shop_images/ready-to-be-trained-man_1.webp",
         "image_fit": "contain",
         "image_position": "right",
         "image_layout": "grid",
@@ -529,7 +481,6 @@
         "logo_NWhKq8": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/fbi-logo.svg",
             "subheading": "",
             "link": ""
           }
@@ -537,7 +488,6 @@
         "logo_MD6j8z": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/us-army-logo.svg",
             "subheading": "",
             "link": ""
           }
@@ -545,7 +495,6 @@
         "logo_t9brGR": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/water-meter.svg",
             "subheading": "",
             "link": ""
           }
@@ -553,7 +502,6 @@
         "logo_GgyRzC": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/nasa-logo.svg",
             "subheading": "",
             "link": ""
           }
@@ -561,7 +509,6 @@
         "logo_MnLyAe": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/us-sailors-logo.svg",
             "subheading": "",
             "link": ""
           }
@@ -569,7 +516,6 @@
         "logo_aU7q4M": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/pfizer-logo.svg",
             "subheading": "",
             "link": ""
           }
