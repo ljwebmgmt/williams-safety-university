@@ -1214,35 +1214,30 @@ document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('SidebarSearchInput');
   const searchSubmit = document.getElementById('SidebarSearchSubmit');
 
-  // Read current URL parameters to keep the input filled on page reload
+  // Sync the input box with the current search if the user is already on the search page
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has('q')) {
-    // Strips out wildcard characters if present so it looks clean to the user
+    // Strips out wildcards so it reads cleanly to the user (e.g., "*Cranes*" becomes "Cranes")
     searchInput.value = urlParams.get('q').replace(/\*/g, ''); 
   }
 
   function handleSidebarSearch() {
     const term = searchInput.value.trim();
-    const currentUrl = new URL(window.location.href);
     
     if (term) {
-      // Appends standard wildcard syntax (*term*) for a fuzzy/partial match search
-      currentUrl.searchParams.set('q', `*${term}*`);
+      // Redirect to the native search endpoint using wildcard search constraints
+      // type=product ensures it only looks up your courses, not blog posts or pages
+      window.location.href = `/search?q=*${encodeURIComponent(term)}*&type=product`;
     } else {
-      currentUrl.searchParams.delete('q');
+      // If they clear the search and hit submit, take them back to the full catalog
+      window.location.href = '/collections/all';
     }
-    
-    // Maintain page context but reset pagination to page 1 for the new filter
-    currentUrl.searchParams.delete('page');
-    
-    // Redirects or updates the view
-    window.location.href = currentUrl.toString();
   }
 
-  // Trigger search on button click
+  // Trigger on click
   searchSubmit.addEventListener('click', handleSidebarSearch);
 
-  // Trigger search on pressing 'Enter' key inside the text field
+  // Trigger on 'Enter' keypress
   searchInput.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
       e.preventDefault();
