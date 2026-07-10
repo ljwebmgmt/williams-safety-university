@@ -1209,3 +1209,45 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('SidebarSearchInput');
+  const searchSubmit = document.getElementById('SidebarSearchSubmit');
+
+  // Read current URL parameters to keep the input filled on page reload
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('q')) {
+    // Strips out wildcard characters if present so it looks clean to the user
+    searchInput.value = urlParams.get('q').replace(/\*/g, ''); 
+  }
+
+  function handleSidebarSearch() {
+    const term = searchInput.value.trim();
+    const currentUrl = new URL(window.location.href);
+    
+    if (term) {
+      // Appends standard wildcard syntax (*term*) for a fuzzy/partial match search
+      currentUrl.searchParams.set('q', `*${term}*`);
+    } else {
+      currentUrl.searchParams.delete('q');
+    }
+    
+    // Maintain page context but reset pagination to page 1 for the new filter
+    currentUrl.searchParams.delete('page');
+    
+    // Redirects or updates the view
+    window.location.href = currentUrl.toString();
+  }
+
+  // Trigger search on button click
+  searchSubmit.addEventListener('click', handleSidebarSearch);
+
+  // Trigger search on pressing 'Enter' key inside the text field
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      handleSidebarSearch();
+    }
+  });
+});
+</script>
