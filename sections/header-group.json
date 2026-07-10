@@ -17,13 +17,12 @@
         "item_CUW7xW": {
           "type": "item",
           "settings": {
-            "text": "1-866-429-6742",
-            "image": "shopify://shop_images/telephone.png",
+            "text": "855-SAFE-OPS",
             "img-size": 22,
             "img-space": 12,
             "inv_img": false,
-            "item-width": 15,
-            "link": "tel:1-866-429-6742",
+            "item-width": 14,
+            "link": "tel:1-855-723-3677",
             "alignment": "align-left",
             "hide_mobile": false,
             "hide_img_mobile": false
@@ -32,13 +31,12 @@
         "item_BpHYy6": {
           "type": "item",
           "settings": {
-            "text": "info@oshascorm.org",
-            "image": "shopify://shop_images/mail.png",
+            "text": "admin@Williams-Safety.com",
             "img-size": 22,
             "img-space": 12,
             "inv_img": false,
-            "item-width": 15,
-            "link": "mailto:info@HAZWOPER-OSHA.com",
+            "item-width": 16,
+            "link": "mailto:admin@Williams-Safety.com",
             "alignment": "align-left",
             "hide_mobile": false,
             "hide_img_mobile": false
@@ -47,7 +45,7 @@
         "menu_hKarT3": {
           "type": "menu",
           "settings": {
-            "menu": "top-bar-menu",
+            "menu": "",
             "item-width": 70,
             "alignment": "align-right",
             "hide_mobile": true
@@ -80,8 +78,6 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "mobile_logo_position": "center",
-        "support_phone": "1-866-429-6742",
-        "support_email": "info@oshascorm.org",
         "margin_bottom": 0,
         "padding_top": 8,
         "padding_bottom": 8
