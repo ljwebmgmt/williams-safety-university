@@ -169,50 +169,29 @@
     "ss_collection_list_9aTtPC": {
       "type": "ss-collection-list",
       "blocks": {
+        "featured_collection_JBV84F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "transportation"
+          }
+        },
         "featured_collection_NwaeBf": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hazwoper-training-29-cfr-1910-120"
+            "collection": "hydrogen-sulfide-h2s-training"
           }
         },
         "featured_collection_Ldf6Ln": {
           "type": "featured_collection",
           "settings": {
-            "collection": "rcra-hazardous-waste-management"
-          }
-        },
-        "featured_collection_JBV84F": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nfpa-70e-electrical-arc-flash-safety"
-          }
-        },
-        "featured_collection_TmYJe3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "osha-construction-safety-training-series"
-          }
-        },
-        "featured_collection_y6rxD4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "ammonia-refrigeration-training"
-          }
-        },
-        "featured_collection_cpz6QQ": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hazmat-training-dot-iata-imdg-transportation"
+            "collection": "osha-general-industry-safety-training-series"
           }
         }
       },
       "block_order": [
-        "featured_collection_NwaeBf",
-        "featured_collection_Ldf6Ln",
         "featured_collection_JBV84F",
-        "featured_collection_TmYJe3",
-        "featured_collection_y6rxD4",
-        "featured_collection_cpz6QQ"
+        "featured_collection_NwaeBf",
+        "featured_collection_Ldf6Ln"
       ],
       "settings": {
         "title": "Industrial Training and Compliance Series",
