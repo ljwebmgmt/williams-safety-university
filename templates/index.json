@@ -91,7 +91,7 @@
         "column_iHHWPr"
       ],
       "custom_css": [
-        "h2.title {text-align: center; }"
+        "h2.title {text-align: center; width: 100%;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
