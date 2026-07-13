@@ -4,14 +4,13 @@
         {%- for item in search.results -%}
             {%- if item.object_type == 'product' -%}
                 <li class="grid__item">
-                    {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
                     {% render 'ss-card-product',
                         card_product: item,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        image_shape: section.settings.image_shape,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
+                        media_aspect_ratio: 'adapt',
+                        image_shape: 'default',
+                        show_secondary_image: false,
+                        show_vendor: false,
+                        show_rating: false,
                         lazy_load: lazy_load
                     %}
                 </li>
