@@ -268,7 +268,7 @@
     "ss_featured_collection_TXQEmH": {
       "type": "ss-featured-collection",
       "settings": {
-        "title": "Best Selling Safety Courses",
+        "title": "Featured Products",
         "heading_size": "h2",
         "heading_align": "align-center",
         "description": "",
@@ -278,9 +278,9 @@
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": true,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": true,
+        "enable_desktop_slider": false,
         "color_scheme": "",
         "layout": "grid",
         "image_ratio": "square",
