@@ -1,9 +1,9 @@
 {% layout none %}
 {% paginate search.results by 250 %}
-    <ul class="grid product-grid">
+    <div id="product-grid">
         {%- for item in search.results -%}
             {%- if item.object_type == 'product' -%}
-                <li class="grid__item">
+                <div class="grid__item">
                     {% render 'ss-card-product',
                         card_product: item,
                         media_aspect_ratio: 'adapt',
@@ -13,8 +13,8 @@
                         show_rating: false,
                         lazy_load: lazy_load
                     %}
-                </li>
+                </div>
             {%- endif -%} 
         {%- endfor -%}
-    </ul>
+    </div>
 {% endpaginate %}
