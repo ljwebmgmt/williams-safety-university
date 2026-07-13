@@ -48,7 +48,7 @@
       </div> {% endcomment %}
       <div class="facets__disclosure" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(var(--color-foreground),.1); padding-bottom: 1.5rem;">
         <div class="facets__summary" style="font-weight: bold; margin-bottom: 1rem; font-size: 1.4rem; text-transform: uppercase; letter-spacing: .1rem;">
-          Search
+          {{ 'products.facets.filter_by_label' | t }}
         </div>
         <div class="sidebar-search-wrapper">
           <input 
@@ -77,24 +77,10 @@
               class="facets__wrapper"
             {% endif %}
           >
-            {%- if filter_type == 'horizontal' and results.filters != empty -%}
-              <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
-                {{ 'products.facets.filter_by_label' | t }}
-              </h2>
-            {%- endif -%}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
               <div class="active-facets active-facets-desktop">
                 <div class="active-facets-vertical-filter">
-                  {%- unless results.filters == empty -%}
-                    <h2
-                      class="facets__heading facets__heading--vertical caption-large text-body"
-                      id="verticalTitle"
-                      tabindex="-1"
-                    >
-                      {{ 'products.facets.filter_by_label' | t }}
-                    </h2>
-                  {%- endunless -%}
                   <facet-remove class="active-facets__button-wrapper">
                     <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
                       <span>{{ 'products.facets.clear_all' | t }}</span>
