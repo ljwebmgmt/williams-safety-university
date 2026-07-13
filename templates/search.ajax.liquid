@@ -1,1 +1,12 @@
 {% layout none %}
+{% paginate search.results by 250 %}
+    <ul class="grid product-grid">
+        {%- for item in search.results -%}
+            {%- if item.object_type == 'product' -%}
+                <li class="grid__item">
+                    
+                </li>
+            {%- endif -%} 
+        {%- endfor -%}
+    </ul>
+{% endpaginate %}
