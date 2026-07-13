@@ -1223,7 +1223,7 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
-<script>
+{% comment %} <script>
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('SidebarSearchInput');
   const searchSubmit = document.getElementById('SidebarSearchSubmit');
@@ -1257,6 +1257,83 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       handleSidebarSearch();
     }
+  });
+});
+</script> {% endcomment %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('LiveGlobalSearchInput');
+  const statusText = document.getElementById('LiveSearchStatus');
+  const productGridContainer = document.getElementById('ProductGridContainer'); // Dawn's master grid section wrapper
+
+  if (!searchInput || !productGridContainer) return;
+
+  // Track the original HTML content of the grid and pagination to restore it when input is cleared
+  const originalGridHtml = productGridContainer.innerHTML;
+
+  // Debounce helper to wait 400ms after user stops typing
+  function debounce(fn, delay) {
+    let timeoutId;
+    return (...args) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => fn.apply(this, args), delay);
+    };
+  }
+
+  const performLiveSearch = debounce(function(searchTerm) {
+    if (searchTerm.length === 0) {
+      // Restore original page content (all products + standard pagination layout)
+      productGridContainer.innerHTML = originalGridHtml;
+      statusText.textContent = '';
+      return;
+    }
+
+    statusText.textContent = 'Searching...';
+
+    // Query Shopify's Predictive/Search API restricting results to products only using wildcards
+    // We append the section rendering target to fetch just the raw grid markup
+    const collectionHandle = window.location.pathname.split('/collections/')[1] || 'all';
+    const searchUrl = `/search?q=*${encodeURIComponent(searchTerm)}*&type=product&section_id=main-collection-product-grid`;
+
+    fetch(searchUrl)
+      .then(response => response.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newGrid = doc.getElementById('product-grid');
+        const newPagination = doc.querySelector('.pagination-wrapper');
+
+        if (newGrid && newGrid.querySelectorAll('.grid__item').length > 0) {
+          // Clear container and inject the global matching results
+          const targetGridWrapper = productGridContainer.querySelector('#product-grid').parentNode;
+          
+          // Isolate the newly found items
+          productGridContainer.querySelector('#product-grid').innerHTML = newGrid.innerHTML;
+          
+          // Hide or remove pagination because the query returned the entire global matching stack
+          if (newPagination) {
+             const oldPagination = productGridContainer.querySelector('.pagination-wrapper');
+             if (oldPagination) oldPagination.style.display = 'none';
+          }
+          
+          const matchCount = newGrid.querySelectorAll('.grid__item').length;
+          statusText.textContent = `Found ${matchCount} course(s) across catalog`;
+        } else {
+          productGridContainer.querySelector('#product-grid').innerHTML = '<p class="loading-overlay__empty-text" style="padding: 2rem;">No courses match your search criteria.</p>';
+          const oldPagination = productGridContainer.querySelector('.pagination-wrapper');
+          if (oldPagination) oldPagination.style.display = 'none';
+          statusText.textContent = '0 matches found.';
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching global filter results:', error);
+        statusText.textContent = 'Error loading results.';
+      });
+  }, 400);
+
+  // Bind keypress input event listener
+  searchInput.addEventListener('input', function() {
+    performLiveSearch(this.value.trim());
   });
 });
 </script>
