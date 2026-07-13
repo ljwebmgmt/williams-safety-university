@@ -696,20 +696,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const slideshowElements = document.querySelectorAll('.ss-slideshow');
 
   // Create a MutationObserver to watch for style changes
-  const observer = new MutationObserver(() => {
-    const isDisplayed = getComputedStyle(videoPopup).display === 'flex';
+  if (videoPopup) {
+    const observer = new MutationObserver(() => {
+      const isDisplayed = getComputedStyle(videoPopup).display === 'flex';
 
-    slideshowElements.forEach(el => {
-      if (isDisplayed) {
-        el.style.zIndex = '9';
-      } else {
-        el.style.zIndex = '';
-      }
+      slideshowElements.forEach(el => {
+        if (isDisplayed) {
+          el.style.zIndex = '9';
+        } else {
+          el.style.zIndex = '';
+        }
+      });
     });
-  });
-
-  // Start observing the style attribute of videoPopup
-  observer.observe(videoPopup, { attributes: true, attributeFilter: ['style'] });
+    // Start observing the style attribute of videoPopup
+    observer.observe(videoPopup, { attributes: true, attributeFilter: ['style'] });
+  }
 </script>
 
   </body>
