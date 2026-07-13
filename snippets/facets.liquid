@@ -1276,7 +1276,7 @@ document.addEventListener('DOMContentLoaded', function() {
     statusText.textContent = 'Searching...';
 
     // Fetch the standard search results page without demanding a specific section
-    const searchUrl = `/search?q=*${encodeURIComponent(searchTerm)}*&type=product`;
+    const searchUrl = `/search?q=*${encodeURIComponent(searchTerm)}*&type=product&limit=250`;
 
     fetch(searchUrl)
       .then(response => response.text())
