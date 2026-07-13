@@ -1289,7 +1289,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const searchItems = doc.querySelectorAll('#product-grid .grid__item');
         const targetGrid = productGridContainer.querySelector('#product-grid');
         const paginationNav = productGridContainer.querySelector('.pagination-wrapper');
-
+        console.log(searchItems);
         if (targetGrid && searchItems.length > 0) {
           // Clear current collection items and inject the search result items
           targetGrid.innerHTML = '';
