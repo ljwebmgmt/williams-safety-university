@@ -626,7 +626,10 @@ class SliderComponent extends HTMLElement {
 
     this.initPages();
     const resizeObserver = new ResizeObserver((entries) => this.initPages());
-    resizeObserver.observe(this.slider);
+    if (resizeObserver) {
+      resizeObserver.observe(this.slider);
+    }
+    
 
     this.slider.addEventListener('scroll', this.update.bind(this));
     this.prevButton.addEventListener('click', this.onButtonClick.bind(this));
