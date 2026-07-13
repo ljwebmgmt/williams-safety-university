@@ -90,6 +90,7 @@
         "column_3FKm9e",
         "column_iHHWPr"
       ],
+      "disabled": true,
       "custom_css": [
         "h2.title {text-align: center; width: 100%;}"
       ],
@@ -164,6 +165,7 @@
       "block_order": [
         "ai_gen_block_f4eaa1c_kaRNck"
       ],
+      "disabled": true,
       "settings": {}
     },
     "ss_collection_list_9aTtPC": {
@@ -244,6 +246,7 @@
         "column_BjJCm8",
         "column_AyQh9Q"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Built for Safety. Designed for Scalability.",
@@ -389,6 +392,7 @@
         "review_mCJJmi",
         "review_jtA3Fp"
       ],
+      "disabled": true,
       "settings": {
         "title": "Customer Reviews",
         "heading_size": "h2",

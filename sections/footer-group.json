@@ -18,7 +18,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/william-safety-logo-removebg-preview.png",
-            "footer_description": "<p><strong>Disclaimer:</strong> Williams Safety & Rescue is a private company offering OSHA safety training courses in SCORM format. Our courses are compatible with SCORM-supported Learning Management Systems (LMS), but we are not affiliated with the official OSHA website at <a href=\"https://www.osha.gov/laws-regs.\" target=\"_blank\" title=\"https://www.osha.gov/laws-regs.\">https://www.osha.gov</a><br/><br/><em>Subsidiary Partnership</em><br/><br/>Williams Safety & Rescue operates as a subsidiary of <a href=\"https://ictraining.us/\" target=\"_blank\" title=\"https://ictraining.us/\">Industrial Certified Training, LLC</a>, a company specializing in workplace safety training. We partner with <a href=\"https://hazwoper-osha.com/\" target=\"_blank\" title=\"https://hazwoper-osha.com/\">HAZWOPER OSHA Training, LLC</a> to provide a comprehensive selection of OSHA compliance courses.</p>",
+            "footer_description": "<p>Educational Services Provided in Partnership with <a href=\"https://hazwoper-osha.com/affiliation-private-label-on-demand\" target=\"_blank\" title=\"https://hazwoper-osha.com/affiliation-private-label-on-demand\"><strong>HAZWOPER-OSHA Training, LLC</strong></a></p>",
             "image_width": 280,
             "alignment": "",
             "mob-alignment": "mob-left",
@@ -43,8 +43,8 @@
           "settings": {
             "show_social": true,
             "block_width_brand": 25,
-            "footer_logo_link": "https://www.bbb.org/us/ca/los-angeles/profile/online-education/hazwoper-osha-training-1216-1424720",
-            "footer_logo_link2": "https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618",
+            "footer_logo_link": "",
+            "footer_logo_link2": "",
             "footer_logo3": "<a href=\"https://www.shopify.com/security/pci-compliant?utm_medium=shop&utm_source=secure\" title=\"This online store is secured by Shopify\" target=\"_blank\" rel=\"nofollow\">\n                          <img src=\"https://cdn.shopify.com/s/images/badges/shopify-secure-badge-white.svg\" alt=\"Shopify secure badge\">\n                        </a>"
           }
         }
@@ -62,8 +62,8 @@
         "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
+        "payment_enable": false,
+        "show_policy": true,
         "margin_top": 0,
         "padding_top": 48,
         "padding_bottom": 36,
