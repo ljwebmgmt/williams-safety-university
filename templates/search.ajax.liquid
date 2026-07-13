@@ -2,6 +2,10 @@
 {% paginate search.results by 250 %}
     <div id="product-grid">
         {%- for item in search.results -%}
+            {% assign lazy_load = false %}
+            {%- if forloop.index > 2 -%}
+                {%- assign lazy_load = true -%}
+            {%- endif -%}
             {%- if item.object_type == 'product' -%}
                 <div class="grid__item">
                     {% render 'ss-card-product',
