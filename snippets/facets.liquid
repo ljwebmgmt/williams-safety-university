@@ -29,7 +29,7 @@
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
-      <div class="facets__disclosure js-filter" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(var(--color-foreground),.1); padding-bottom: 1.5rem;">
+      {% comment %} <div class="facets__disclosure js-filter" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(var(--color-foreground),.1); padding-bottom: 1.5rem;">
         <div class="sidebar-search-wrapper" style="display: flex; flex-direction: column; gap: 10px;">
           <input 
             type="text" 
@@ -44,6 +44,20 @@
           >
             Submit
           </button>
+        </div>
+      </div> {% endcomment %}
+      <div class="facets__disclosure" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(var(--color-foreground),.1); padding-bottom: 1.5rem;">
+        <div class="facets__summary" style="font-weight: bold; margin-bottom: 1rem; font-size: 1.4rem; text-transform: uppercase; letter-spacing: .1rem;">
+          Search
+        </div>
+        <div class="sidebar-search-wrapper">
+          <input 
+            type="text" 
+            id="LiveGlobalSearchInput" 
+            placeholder="Search All Courses..." 
+            style="width: 100%; padding: 10px; border: 1px solid rgba(var(--color-foreground),.2); font-size: 1.4rem;"
+          />
+          <div id="LiveSearchStatus" style="font-size: 1.2rem; margin-top: 5px; color: rgba(var(--color-foreground),.6); min-height: 18px;"></div>
         </div>
       </div>
       <form
