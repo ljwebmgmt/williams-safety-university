@@ -1271,6 +1271,13 @@ document.addEventListener('DOMContentLoaded', function() {
       // Restore original page content (all products + active pagination)
       productGridContainer.innerHTML = originalGridHtml;
       statusText.textContent = '';
+      if (sidebarFiltersForm) {
+        sidebarFiltersForm.style.opacity = '1';
+        sidebarFiltersForm.style.pointerEvents = 'auto';
+        sidebarFiltersForm.style.height = 'auto';
+        sidebarFiltersForm.style.overflow = 'visible';
+      }
+      
       return;
     }
 
