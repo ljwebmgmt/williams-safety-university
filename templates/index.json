@@ -174,24 +174,45 @@
         "featured_collection_JBV84F": {
           "type": "featured_collection",
           "settings": {
-            "collection": "transportation"
+            "collection": "hazwoper-training-29-cfr-1910-120"
+          }
+        },
+        "featured_collection_MMUxnA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rcra-hazardous-waste-management"
+          }
+        },
+        "featured_collection_kbQhmW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nfpa-70e-electrical-arc-flash-safety"
+          }
+        },
+        "featured_collection_rrTC3g": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "osha-construction-safety-training-series"
           }
         },
         "featured_collection_NwaeBf": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hydrogen-sulfide-h2s-training"
+            "collection": "ammonia-refrigeration-training"
           }
         },
         "featured_collection_Ldf6Ln": {
           "type": "featured_collection",
           "settings": {
-            "collection": "osha-general-industry-safety-training-series"
+            "collection": "hazmat-training-dot-iata-imdg-transportation"
           }
         }
       },
       "block_order": [
         "featured_collection_JBV84F",
+        "featured_collection_MMUxnA",
+        "featured_collection_kbQhmW",
+        "featured_collection_rrTC3g",
         "featured_collection_NwaeBf",
         "featured_collection_Ldf6Ln"
       ],
