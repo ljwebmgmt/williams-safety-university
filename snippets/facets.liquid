@@ -1256,6 +1256,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Save the original, pristine HTML of your collection page to restore when input is cleared
   const originalGridHtml = productGridContainer.innerHTML;
+  const sidebarFiltersForm = document.getElementById('FacetFiltersForm') || document.querySelector('.facets-wrapper');
 
   function debounce(fn, delay) {
     let timeoutId;
