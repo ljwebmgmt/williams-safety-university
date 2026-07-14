@@ -274,7 +274,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "osha-general-industry-safety-training-series",
+        "collection": "all-products",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": true,
