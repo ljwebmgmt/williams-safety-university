@@ -1,0 +1,84 @@
+{% layout none %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Collections Table</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 30px;
+      background: #f6f6f7;
+      color: #202223;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      margin-bottom: 5px;
+    }
+    p {
+      color: #6d7175;
+      margin-bottom: 25px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+      border-bottom: 1px solid #e1e3e5;
+    }
+    th {
+      background-color: #f1f2f4;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:hover {
+      background-color: #fafbfb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Product &amp; Collection List</h2>
+    <p>Press <strong>Cmd+A</strong> (or <strong>Ctrl+A</strong>) to select everything, copy it, and paste it directly into Google Sheets or Excel.</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Product Title</th>
+          <th>Associated Collections</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% paginate collections.all.products by 250 %}
+          {% for product in collections.all.products %}
+            <tr>
+              <td><strong>{{ product.title }}</strong></td>
+              <td>
+                {%- for collection in product.collections -%}
+                  {{ collection.title }}{%- unless forloop.last -%}, {%- endunless -%}
+                {%- endfor -%}
+              </td>
+            </tr>
+          {% endfor %}
+        {% endpaginate %}
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
