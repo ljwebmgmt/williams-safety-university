@@ -59,6 +59,7 @@
     <table>
       <thead>
         <tr>
+            <th>Product ID</th>
           <th>Product Title</th>
           <th>Associated Collections</th>
         </tr>
@@ -67,6 +68,7 @@
         {% paginate collections.all.products by 250 %}
           {% for product in collections.all.products %}
             <tr>
+                <td>{{ product.ID }}</td>
               <td><strong>{{ product.title }}</strong></td>
               <td>
                 {%- for collection in product.collections -%}
