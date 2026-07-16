@@ -1502,11 +1502,10 @@ a.product__text {
   align-items: center;
   gap: 16px; /* Spacing between input and button */
   width: 100%;
-  max-width: 480px; /* Adjust based on your layout needs */
 }
 
 /* --- 1. Modern Quantity Selector Styling --- */
-.quantity-wrapper {
+.quantity {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -1518,7 +1517,7 @@ a.product__text {
   background-color: #fff;
 }
 
-.quantity-button {
+.quantity .quantity__button {
   background: none;
   border: none;
   cursor: pointer;
@@ -1532,11 +1531,11 @@ a.product__text {
   transition: color 0.2s;
 }
 
-.quantity-button:hover {
+.quantity__button:hover {
   color: #000;
 }
 
-.quantity-input {
+.quantity__input {
   width: 40px;
   border: none;
   text-align: center;
