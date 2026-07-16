@@ -1501,6 +1501,7 @@ a.product__text {
     display: flex;
     align-items: center;
     justify-content: var(--divider-justify-content);
+    color: rgb(0 0 0 / 0.81);
 }
 .spacing-style, .inherit-spacing {
     padding-block: calc(var(--padding-block-start) + var(--section-top-offset, 0px)) var(--padding-block-end);
