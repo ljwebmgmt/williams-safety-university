@@ -1561,8 +1561,9 @@ a.product__text {
 
 .product-form__actions .add-to-cart-wrapper .product-form { 
   margin: 0;
-  width: 100%;
+  display: block;
 }
+
 .product-form__buttons .product-form__submit {
   display: inline-flex;
   align-items: center;
