@@ -1505,7 +1505,7 @@ a.product__text {
 }
 
 /* --- 1. Modern Quantity Selector Styling --- */
-.quantity {
+.product-form__quantity .quantity {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -1517,7 +1517,7 @@ a.product__text {
   background-color: #fff;
 }
 
-.quantity .quantity__button {
+.product-form__quantity .quantity .quantity__button {
   background: none;
   border: none;
   cursor: pointer;
@@ -1531,11 +1531,11 @@ a.product__text {
   transition: color 0.2s;
 }
 
-.quantity__button:hover {
+.product-form__quantity .quantity .quantity__button:hover {
   color: #000;
 }
 
-.quantity__input {
+.product-form__quantity .quantity .quantity__input {
   width: 40px;
   border: none;
   text-align: center;
@@ -1547,8 +1547,8 @@ a.product__text {
   -moz-appearance: textfield; /* Remove default spin arrows */
 }
 
-.quantity-input::-webkit-outer-spin-button,
-.quantity-input::-webkit-inner-spin-button {
+.product-form__quantity .quantity .quantity__input::-webkit-outer-spin-button,
+.product-form__quantity .quantity .quantity__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
