@@ -1571,6 +1571,7 @@ a.product__text {
   gap: 10px;                 /* Space between icon and text */
   height: 54px;
   background-color: #000000 !important; /* Pure black background */
+  border-color: #000 !important;
   color: #ffffff;            /* White text */
   border: none;
   border-radius: 18px;       /* Match the rounded look of the input */
