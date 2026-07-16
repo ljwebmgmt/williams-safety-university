@@ -1608,3 +1608,5 @@ a.product__text {
   box-shadow: none !important;
   border: none !important;
 }
+
+body { font-size: 14px; }
