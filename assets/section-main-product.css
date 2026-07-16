@@ -1508,3 +1508,23 @@ a.product__text {
     margin-block: var(--margin-block-start) var(--margin-block-end);
     margin-inline: var(--margin-inline-start) var(--margin-inline-end);
 }
+@media screen and (min-width: 990px) {
+    .spacing-style {
+        --spacing-scale: var(--spacing-scale-default);
+    }
+}
+.spacing-style {
+    --spacing-scale: var(--spacing-scale-md);
+    --padding-block: 0px;
+    --padding-block-start: var(--padding-block, 0px);
+    --padding-block-end: var(--padding-block, 0px);
+    --padding-inline: 0px;
+    --padding-inline-start: var(--padding-inline, 0px);
+    --padding-inline-end: var(--padding-inline, 0px);
+    --margin-block: 0px;
+    --margin-block-start: var(--margin-block, 0px);
+    --margin-block-end: var(--margin-block, 0px);
+    --margin-inline: 0px;
+    --margin-inline-start: var(--margin-inline, 0px);
+    --margin-inline-end: var(--margin-inline, 0px);
+}
