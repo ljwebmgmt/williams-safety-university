@@ -1570,7 +1570,7 @@ a.product__text {
   justify-content: center;
   gap: 10px;                 /* Space between icon and text */
   height: 54px;
-  background-color: #000000; /* Pure black background */
+  background-color: #000000 !important; /* Pure black background */
   color: #ffffff;            /* White text */
   border: none;
   border-radius: 18px;       /* Match the rounded look of the input */
