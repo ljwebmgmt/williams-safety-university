@@ -20,6 +20,12 @@
           "type": "price",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {
+            "custom_desc": ""
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -31,12 +37,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "custom_desc": ""
-          }
-        },
         "video_UzbK8K": {
           "type": "video",
           "settings": {}
@@ -45,9 +45,9 @@
       "block_order": [
         "title",
         "price",
+        "description",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "video_UzbK8K"
       ],
       "settings": {
