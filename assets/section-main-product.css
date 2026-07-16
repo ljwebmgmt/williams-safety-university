@@ -1535,4 +1535,5 @@ a.product__text {
     border-radius: calc(var(--style-border-radius-sm) * var(--divider-border-rounded));
     flex-basis: var(--divider-flex-basis);
     min-height: var(--divider-flex-basis);
+    color: rgb(0 0 0 / 0.81);
 }
