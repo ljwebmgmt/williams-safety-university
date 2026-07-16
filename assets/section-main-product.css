@@ -1559,6 +1559,10 @@ a.product__text {
   flex-grow: 1;
 }
 
+.product-form__actions .add-to-cart-wrapper .product-form { 
+  margin: 0;
+  width: 100%;
+}
 .product-form__buttons .product-form__submit {
   display: inline-flex;
   align-items: center;
