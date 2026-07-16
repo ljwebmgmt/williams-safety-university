@@ -72,20 +72,6 @@
       {% if section.settings.media_position == 'left' %}
         <div class="grid__item product__media-wrapper small-hide">
           {% render 'product-media-gallery', variant_images: variant_images %}
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when 'description' -%}
-                {%- if block.settings.custom_desc != blank or product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {% if block.settings.custom_desc != blank %}
-                      {{ block.settings.custom_desc }}
-                    {% else %}
-                      {{ product.description }}
-                    {% endif %}
-                  </div>
-                {%- endif -%}
-            {%- endcase -%}
-          {%- endfor -%}
         </div>
       {% endif %}
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
