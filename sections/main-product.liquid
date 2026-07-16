@@ -159,17 +159,6 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
-              {%- when 'description' -%}
-                {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {% if block.settings.custom_desc == blank %}
-                      {{ product.description }}
-                    {% else %}
-                      {{ block.settings.custom_desc }}
-                    {% endif %}
-                  </div>
-                {%- endif -%}
-
               {%- when 'video' -%}
                 <div class="product_video" {{ block.shopify_attributes }}>
                     {{ product.metafields.custom.video }}
