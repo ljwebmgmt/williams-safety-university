@@ -1496,44 +1496,95 @@ a.product__text {
     border: none;
   }
 }
-.divider {
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    justify-content: var(--divider-justify-content);
-    color: rgb(0 0 0 / 0.81);
+/* Container: Side-by-side flex layout */
+.product-form__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Spacing between input and button */
+  width: 100%;
+  max-width: 480px; /* Adjust based on your layout needs */
 }
-.spacing-style, .inherit-spacing {
-    padding-block: calc(var(--padding-block-start) + var(--section-top-offset, 0px)) var(--padding-block-end);
-    padding-inline: var(--padding-inline-start) var(--padding-inline-end);
-    margin-block: var(--margin-block-start) var(--margin-block-end);
-    margin-inline: var(--margin-inline-start) var(--margin-inline-end);
+
+/* --- 1. Modern Quantity Selector Styling --- */
+.quantity-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e2e2e2; /* Soft gray border */
+  border-radius: 16px;       /* Smooth rounded corners */
+  padding: 4px 8px;
+  height: 54px;              /* Explicit height to match the button */
+  min-width: 130px;
+  background-color: #fff;
 }
-@media screen and (min-width: 990px) {
-    .spacing-style {
-        --spacing-scale: var(--spacing-scale-default);
-    }
+
+.quantity-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  width: 32px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
 }
-.spacing-style {
-    --spacing-scale: var(--spacing-scale-md);
-    --padding-block: 0px;
-    --padding-block-start: var(--padding-block, 0px);
-    --padding-block-end: var(--padding-block, 0px);
-    --padding-inline: 0px;
-    --padding-inline-start: var(--padding-inline, 0px);
-    --padding-inline-end: var(--padding-inline, 0px);
-    --margin-block: 0px;
-    --margin-block-start: var(--margin-block, 0px);
-    --margin-block-end: var(--margin-block, 0px);
-    --margin-inline: 0px;
-    --margin-inline-start: var(--margin-inline, 0px);
-    --margin-inline-end: var(--margin-inline, 0px);
+
+.quantity-button:hover {
+  color: #000;
 }
-.divider__line {
-    border-bottom: var(--divider-border-thickness) solid var(--color-border);
-    border-right: var(--divider-border-thickness) solid var(--color-border);
-    border-radius: calc(var(--style-border-radius-sm) * var(--divider-border-rounded));
-    flex-basis: var(--divider-flex-basis);
-    min-height: var(--divider-flex-basis);
-    color: rgb(0 0 0 / 0.81);
+
+.quantity-input {
+  width: 40px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background: transparent;
+  outline: none;
+  -moz-appearance: textfield; /* Remove default spin arrows */
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* --- 2. Black "Add to Cart" Button Styling --- */
+.btn-add-to-cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;                 /* Space between icon and text */
+  flex-grow: 1;              /* Allows the button to stretch nicely */
+  height: 54px;
+  background-color: #000000; /* Pure black background */
+  color: #ffffff;            /* White text */
+  border: none;
+  border-radius: 18px;       /* Match the rounded look of the input */
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;      /* "Add to cart" sentence case instead of uppercase */
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #1a1a1a; /* Subtle dark grey on hover */
+}
+
+.btn-add-to-cart:active {
+  transform: scale(0.98);    /* Tiny click feedback animation */
+}
+
+/* Align the SVG icon cleanly with the text */
+.icon-cart-bag {
+  display: inline-block;
+  vertical-align: middle;
+  stroke: #ffffff;
 }
