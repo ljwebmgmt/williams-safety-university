@@ -1584,7 +1584,7 @@ a.product__text {
 
 
 .product-form__buttons .product-form__submit:hover {
-  background-color: #1a1a1a !important; /* Subtle dark grey on hover */
+  background-color: rgb(51 51 51 / 1.0) !important; /* Subtle dark grey on hover */
   color: #fff !important;;
 }
 
