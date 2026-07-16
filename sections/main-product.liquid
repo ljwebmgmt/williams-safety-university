@@ -492,14 +492,6 @@
                     {% endif %}
                   </div>
                 {%- endif -%}
-              {%- when 'buy_buttons' -%}
-                {%- render 'buy-buttons',
-                  block: block,
-                  product: product,
-                  product_form_id: product_form_id,
-                  section_id: section.id,
-                  show_pickup_availability: true
-                -%}
               {%- when 'money_back' -%}
                 <div class="money_back">
                   {{ block.settings.text_1 }}
