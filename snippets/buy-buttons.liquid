@@ -80,7 +80,6 @@
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
-            data-action="buy-now"
             class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
             {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
               disabled
@@ -100,7 +99,6 @@
           {%- endif -%}
         </div>
       {%- endform -%}
-      <div data-tf-live="01K22J5FTKY9DEKDR0EF59XH2P"></div>
     </product-form>
 
   {%- else -%}
