@@ -17,9 +17,9 @@
           "settings": {
             "image": "shopify://shop_images/william-safety-hero.jpg",
             "image_mobile": "shopify://shop_images/william-safety-hero.jpg",
-            "heading": "Empower your workforce with OSHA-compliant SCORM trainings designed for corporate LMS platforms",
-            "heading_size": "h1",
-            "subheading": "Our courses help organizations ensure workplace safety, regulatory compliance, and standardized employee training through ready-to-deploy SCORM packages into your LMS",
+            "heading": "<strong>Welcome toWilliams Safety University</strong>",
+            "heading_size": "h0",
+            "subheading": "",
             "button_label": "ENROLL NOW",
             "video_url": "",
             "link": "shopify://collections",
@@ -475,7 +475,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-2",
-        "bg_color": "#fff2bd",
+        "bg_color": "#EFEFED",
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
@@ -827,6 +827,7 @@
         "collapsible_row_dJE9Cc",
         "collapsible_row_pNyqzi"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "custom_class": "faq-row faqs-home",
