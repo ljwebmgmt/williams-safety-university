@@ -1555,13 +1555,15 @@ a.product__text {
 }
 
 /* --- 2. Black "Add to Cart" Button Styling --- */
-.product-form__actions .
+.product-form__actions .add-to-cart-wrapper {
+  flex-grow: 1;
+}
+
 .product-form__buttons .product-form__submit {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;                 /* Space between icon and text */
-  flex-grow: 1;              /* Allows the button to stretch nicely */
   height: 54px;
   background-color: #000000; /* Pure black background */
   color: #ffffff;            /* White text */
