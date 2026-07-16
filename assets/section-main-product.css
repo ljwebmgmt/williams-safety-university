@@ -1498,10 +1498,11 @@ a.product__text {
 }
 /* Container: Side-by-side flex layout */
 .product-form__actions {
-  display: flex;
-  align-items: center;
-  gap: 16px; /* Spacing between input and button */
-  width: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-end !important; /* Aligns both elements perfectly on their bottom edges */
+  gap: 16px !important;
+  width: 100% !important;
 }
 
 /* --- 1. Modern Quantity Selector Styling --- */
