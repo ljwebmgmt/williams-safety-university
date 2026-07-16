@@ -1505,6 +1505,7 @@ a.product__text {
 }
 
 /* --- 1. Modern Quantity Selector Styling --- */
+.product-form__actions .product-form__input.product-form__quantity { flex: 0; }
 .product-form__quantity .quantity {
   display: inline-flex;
   align-items: center;
