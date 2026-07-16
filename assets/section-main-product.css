@@ -1582,8 +1582,10 @@ a.product__text {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
+
 .product-form__buttons .product-form__submit:hover {
   background-color: #1a1a1a; /* Subtle dark grey on hover */
+  color: #fff !important;;
 }
 
 .product-form__buttons .product-form__submit:active {
