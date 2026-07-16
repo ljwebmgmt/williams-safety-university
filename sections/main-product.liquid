@@ -741,20 +741,6 @@
           {% assign duplicate = true %}
         {% endif %}
         {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: duplicate %}
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'description' -%}
-              {%- if block.settings.custom_desc != blank or product.description != blank -%}
-                <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                  {% if block.settings.custom_desc != blank %}
-                    {{ block.settings.custom_desc }}
-                  {% else %}
-                    {{ product.description }}
-                  {% endif %}
-                </div>
-              {%- endif -%}
-          {%- endcase -%}
-        {%- endfor -%}
       </div>
       
       {% if product.metafields.custom.tab_title_1 != blank %}
