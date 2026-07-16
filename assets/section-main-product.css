@@ -1610,3 +1610,4 @@ a.product__text {
 }
 
 body { font-size: 14px; }
+.product__description.rte ul { list-style-position: outside; }
