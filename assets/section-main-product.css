@@ -1594,6 +1594,8 @@ a.product__text {
   display: inline-block;
   vertical-align: middle;
   stroke: #ffffff;
+  width: 20px;
+  height: 20px;
 }
 
 .product-form__quantity .quantity::after,
