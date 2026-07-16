@@ -1496,3 +1496,72 @@ a.product__text {
     border: none;
   }
 }
+
+/* Horizon-inspired Product Page Layout Overrides */
+@media screen and (min-width: 990px) {
+  #MainProduct-{{ section.id }} .product {
+    display: flex;
+    gap: 8%; /* Creates the spacious, airy feel typical of Horizon */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  /* Left Column: Media Gallery (Takes up ~55% width) */
+  #MainProduct-{{ section.id }} .product__media-wrapper {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+
+  /* Right Column: Sticky Product Details (Takes up ~37% width) */
+  #MainProduct-{{ section.id }} .product__info-wrapper {
+    flex: 0 0 37%;
+    max-width: 37%;
+    position: sticky;
+    top: 40px; /* Keeps the buy area sticking cleanly as you scroll */
+    height: fit-content;
+  }
+}
+
+/* Minimalist Typography and Block Spacing (Horizon Style) */
+#MainProduct-{{ section.id }} .product__title h1,
+#MainProduct-{{ section.id }} .product__title h2 {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  letter-spacing: -0.03em; /* Slightly tighter letter spacing for modern headers */
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+#MainProduct-{{ section.id }} .price-wrap {
+  margin-bottom: 2rem;
+}
+
+/* Cleaning up Form Inputs & Buttons */
+#MainProduct-{{ section.id }} .product-form__input {
+  border: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+#MainProduct-{{ section.id }} .variant_picker strong {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+}
+
+/* Make Add to Cart/Checkout Buttons stand out flat & modern */
+#MainProduct-{{ section.id }} .product-form__buttons .button {
+  border-radius: 0px; /* Sharp edges align better with Horizon's aesthetic */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#MainProduct-{{ section.id }} .product-form__buttons .button:hover {
+  opacity: 0.9;
+}
