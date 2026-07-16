@@ -1555,7 +1555,7 @@ a.product__text {
 
 
 /* --- 2. Black "Add to Cart" Button Styling --- */
-.btn-add-to-cart {
+.product-form__buttons .product-form__submit {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1573,11 +1573,11 @@ a.product__text {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.btn-add-to-cart:hover {
+.product-form__buttons .product-form__submit:hover {
   background-color: #1a1a1a; /* Subtle dark grey on hover */
 }
 
-.btn-add-to-cart:active {
+.product-form__buttons .product-form__submit:active {
   transform: scale(0.98);    /* Tiny click feedback animation */
 }
 
