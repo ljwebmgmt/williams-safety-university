@@ -1588,3 +1588,11 @@ a.product__text {
   vertical-align: middle;
   stroke: #ffffff;
 }
+
+.product-form__quantity .quantity::after,
+.product-form__quantity .quantity::before {
+  display: none !important;
+  content: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
