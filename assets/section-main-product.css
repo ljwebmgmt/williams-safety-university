@@ -1496,4 +1496,15 @@ a.product__text {
     border: none;
   }
 }
-
+.divider {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: var(--divider-justify-content);
+}
+.spacing-style, .inherit-spacing {
+    padding-block: calc(var(--padding-block-start) + var(--section-top-offset, 0px)) var(--padding-block-end);
+    padding-inline: var(--padding-inline-start) var(--padding-inline-end);
+    margin-block: var(--margin-block-start) var(--margin-block-end);
+    margin-inline: var(--margin-inline-start) var(--margin-inline-end);
+}
