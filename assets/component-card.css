@@ -484,7 +484,7 @@
 }
 
 /* 1. Ensure the card container allows absolute positioning layers */
-.card-wrapper, .card {
+.ss-card-wrapper, .ss-card {
   position: relative !important;
 }
 
