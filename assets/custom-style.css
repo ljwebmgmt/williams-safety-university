@@ -201,7 +201,7 @@ footer .footer__content-top {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(2, 69, 139, 0.59);
+        background-color: #b81d2482;
         bottom: 0;
         right: 0;
         transform: skewY(-31deg) translateY(50%);
