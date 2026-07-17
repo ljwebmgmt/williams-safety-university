@@ -534,11 +534,16 @@
   font-size: 14px !important;
   font-weight: 500 !important;
   text-transform: none !important;
-  margin-left: 0px !important;
-  max-width: 0 !important; /* Animate the width boundary of the text */
+  
+  /* Strict layout clipping properties */
+  max-width: 0 !important; 
   opacity: 0 !important;
+  visibility: hidden !important; /* Prevents the edge letters from leaking out */
+  overflow: hidden !important;
   white-space: nowrap !important;
-  transition: opacity 0.15s ease, margin-left 0.2s ease, max-width 0.2s ease !important;
+  margin-left: 0px !important;
+  
+  transition: opacity 0.15s ease, max-width 0.2s cubic-bezier(0.25, 1, 0.5, 1), margin-left 0.2s ease, visibility 0.2s !important;
 }
 
 /* 5. Ensure the inner SVG icon displays properly inside the circle */
