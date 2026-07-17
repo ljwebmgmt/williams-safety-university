@@ -36,6 +36,9 @@
         {% if collection.title contains "All Products" and section.settings.hide_allproducts == true %}
           {% assign show_collection = false %}
         {% endif %}
+        {% if collection.title contains "All Products" and section.settings.hide_allproducts == true %}
+          {% assign show_collection = false %}
+        {% endif %}
         {% if collection.title contains "Home page" and section.settings.hide_allproducts == true %}
           {% assign show_collection = false %}
         {% endif %}
