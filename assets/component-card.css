@@ -572,8 +572,8 @@
   stroke: #ffffff !important;
 }
 
-.card-wrapper:hover .quick-add .button span,
-.card-wrapper:hover .product-form__submit span,
-.card:hover .quick-add .button span {
+.card-wrapper:hover .quick-add .button span.btn-text,
+.card-wrapper:hover .product-form__submit span.btn-text,
+.card:hover .quick-add .button span.btn-text {
   opacity: 1 !important;
 }
