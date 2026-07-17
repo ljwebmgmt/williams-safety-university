@@ -1641,4 +1641,5 @@ body { font-size: 14px; }
   }
   
   .main-product-wrapper .product__media-wrapper .product-media-container { border: none; }
+  .main-product-wrapper .product__media-wrapper .product-media-container img { width: 100%; }
 }
