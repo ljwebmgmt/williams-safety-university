@@ -17,7 +17,8 @@
         "image_ratio": "square",
         "columns_desktop": 4,
         "columns_mobile": "2",
-        "hide_bestsell": true
+        "hide_bestsell": true,
+        "hide_allproducts": true
       }
     }
   },
