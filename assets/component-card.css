@@ -558,8 +558,6 @@
 .card:hover .quick-add .button {
   opacity: 1 !important;
   transform: translateY(0) !important;
-  width: 92px !important; /* Target width to fit the icon + "Add" label comfortably */
-  border-radius: 24px !important; /* Morph into a clean pill shape */
 }
 .card-wrapper:hover .quick-add .button::before,.card-wrapper:hover .quick-add .button::after { display: none; }
 
