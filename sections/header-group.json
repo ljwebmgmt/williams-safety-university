@@ -57,6 +57,7 @@
         "item_BpHYy6",
         "menu_hKarT3"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-2",
         "show_line_separator": true,
