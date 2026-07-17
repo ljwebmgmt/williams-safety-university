@@ -569,12 +569,12 @@
 /* 7. Quick action button state changes */
 .card__content .quick-add .button:hover,
 .card__content .product-form__submit:hover {
-  max-width: 100px !important; /* Unlock maximum boundary width */
+  max-width: 100px !important; 
   width: 80px !important;
   border-radius: 24px !important; 
-  padding: 0 14px !important;   /* Give structural breathing room inside the pill */
-  justify-content: flex-start !important;
-  background-color: #ffffff !important; /* Keep white frame background */
+  padding: 0 14px !important;   
+  justify-content: flex-start !important; /* Shifts contents to line up left-to-right */
+  background-color: #ffffff !important; 
 }
 
 .card__content .quick-add .button:hover svg {
