@@ -548,6 +548,8 @@
   transform: translateY(0) !important;
 }
 
+.card-wrapper:hover .quick-add .button::before,.card-wrapper:hover .quick-add .button::after { display: none; }
+
 /* 7. Quick action button state changes */
 .card__content .quick-add .button:hover,
 .card__content .product-form__submit:hover {
