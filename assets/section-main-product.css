@@ -1639,4 +1639,6 @@ body { font-size: 14px; }
     top: 40px !important;
     height: fit-content !important;
   }
+  
+  .main-product-wrapper .product__info-wrapper .global-media-settings { border: none; }
 }
