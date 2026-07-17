@@ -565,7 +565,7 @@
 .card__content .quick-add .button:hover,
 .card__content .product-form__submit:hover {
   max-width: 100px !important; /* Unlock maximum boundary width */
-  width: auto !important;
+  width: 80px !important;
   border-radius: 24px !important; 
   padding: 0 14px !important;   /* Give structural breathing room inside the pill */
   justify-content: flex-start !important;
