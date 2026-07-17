@@ -1334,3 +1334,4 @@ ul.footer_logos {
 }
 .herosection-slider .ss-slideshow .banner__buttons .button { background-color: transparent; border-color: #fff; }
 .footer-block .footer-block-image { justify-content: center; align-items: center; }
+.scormcollectionlist .button, .multicolumn .button { background-color: #000; }
