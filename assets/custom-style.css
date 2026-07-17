@@ -1332,3 +1332,4 @@ ul.footer_logos {
     align-items: center;
     justify-content: flex-end;
 }
+.herosection-slider .ss-slideshow .banner__buttons .button { background-color: transparent; border-color: #fff; }
