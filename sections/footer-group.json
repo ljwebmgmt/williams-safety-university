@@ -35,7 +35,7 @@
             "mob-alignment": "mob-center",
             "image_invert": true,
             "image_copyright": true,
-            "show_social_image": false,
+            "show_social_image": true,
             "block_width_image": 100
           }
         }
