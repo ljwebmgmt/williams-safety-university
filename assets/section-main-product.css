@@ -1617,7 +1617,7 @@ body { font-size: 14px; }
     display: flex !important;
     flex-direction: row !important;
     gap: 5% !important; /* Elegant, narrower gap */
-    align-items: flex-start !important;
+    align-items: center !important;
     max-width: 1400px !important; /* Slightly wider overall container */
     margin: 0 auto !important;
     padding: 0 2rem !important;
