@@ -491,7 +491,7 @@
 /* 2. Reposition the Quick Add wrapper to float over the image */
 .card__content .quick-add {
   position: absolute !important;
-  top: 340px !important; 
+  top: 300px !important; 
   right: 12px !important;
   z-index: 10 !important;
   margin: 0 !important;
