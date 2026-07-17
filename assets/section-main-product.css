@@ -1611,3 +1611,32 @@ a.product__text {
 
 body { font-size: 14px; }
 .product__description.rte ul { list-style-position: outside; }
+@media screen and (min-width: 990px) {
+  /* Main Container */
+  .main-product-wrapper .product {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 5% !important; /* Elegant, narrower gap */
+    align-items: flex-start !important;
+    max-width: 1400px !important; /* Slightly wider overall container */
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+  }
+
+  /* Left Column: Expanded Media Gallery (62% Width) */
+  .main-product-wrapper .product__media-wrapper {
+    flex: 0 0 62% !important;
+    max-width: 62% !important;
+    width: 62% !important;
+  }
+
+  /* Right Column: Compressed Text Details (33% Width) */
+  .main-product-wrapper .product__info-wrapper {
+    flex: 0 0 33% !important;
+    max-width: 33% !important;
+    width: 33% !important;
+    position: sticky !important;
+    top: 40px !important;
+    height: fit-content !important;
+  }
+}
