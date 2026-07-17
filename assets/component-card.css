@@ -497,7 +497,7 @@
   margin: 0 !important;
   padding: 0 !important;
 }
-#collection-products-grid .collection .product-grid .grid__item .card__content .quick-add { top: 210px !important; }
+#collection-products-grid .collection .product-grid .grid__item .card__content .quick-add { top: 215px !important; }
 
 /* 3. Transform the flat rectangular button into a clean floating circle */
 .card__content .quick-add .button,
