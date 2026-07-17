@@ -571,3 +571,9 @@
 .card__content .quick-add .button:hover svg {
   stroke: #ffffff !important;
 }
+
+.card-wrapper:hover .quick-add .button span,
+.card-wrapper:hover .product-form__submit span,
+.card:hover .quick-add .button span {
+  opacity: 1 !important;
+}
