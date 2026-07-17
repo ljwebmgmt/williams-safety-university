@@ -501,12 +501,12 @@
 /* 3. Transform the flat rectangular button into a clean floating circle */
 .card__content .quick-add .button,
 .card__content .product-form__submit {
-  width: 32px !important; 
-  height: 32px !important;
-  min-width: 32px !important;
-  min-height: 32px !important;
-  max-width: 32px !important; /* Lock it as a circle initially */
-  border-radius: 50px !important; 
+  width: 38px !important; 
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  max-width: 38px !important; /* Lock it as a circle initially */
+  border-radius: 22px !important; 
   background-color: #ffffff !important;
   color: #000000 !important;
   border: 1px solid #e2e2e2 !important;
