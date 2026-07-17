@@ -491,13 +491,13 @@
 /* 2. Reposition the Quick Add wrapper to float over the image */
 .card__content .quick-add {
   position: absolute !important;
-  top: 300px !important; 
+  top: 290px !important; 
   right: 12px !important;
   z-index: 10 !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-#collection-products-grid .collection .product-grid .grid__item .card__content .quick-add { top: 215px !important; }
+#collection-products-grid .collection .product-grid .grid__item .card__content .quick-add { top: 210px !important; }
 
 /* 3. Transform the flat rectangular button into a clean floating circle */
 .card__content .quick-add .button,
