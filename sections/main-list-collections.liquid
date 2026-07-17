@@ -29,21 +29,28 @@
       role="list"
     >
       {%- for collection in collections -%}
-        {% unless collection.title contains "Best Selling" and section.settings.hide_bestsell == true %}
-        <li
-          class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: {{ forloop.index }};"
-          {% endif %}
-        >
-          {% render 'card-collection',
-            card_collection: collection,
-            media_aspect_ratio: section.settings.image_ratio,
-            columns: 3
-          %}
-        </li>
-        {% endunless %}
+        {% assign show_collection = true %}
+        {% if collection.title contains "Best Selling" and section.settings.hide_bestsell == true  %}
+          {% assign show_collection = false %}
+        {% endif %}
+        {% if collection.title contains "All Products" and section.settings.hide_allproducts == true %}
+          {% assign show_collection = false %}
+        {% endif %}
+        {% if show_collection %}
+          <li
+            class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            {% render 'card-collection',
+              card_collection: collection,
+              media_aspect_ratio: section.settings.image_ratio,
+              columns: 3
+            %}
+          </li>
+        {% endif %}
       {%- endfor -%}
     </ul>
     {% render 'pagination', paginate: paginate %}
