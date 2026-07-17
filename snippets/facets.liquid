@@ -130,7 +130,7 @@
                 {% when 'boolean', 'list' %}
                   {%- assign filter_label_downcase = filter.label | downcase -%}
                   {%- if filter_label_downcase == 'discipline' -%}
-                    {%- unless collection.handle == 'all' or request.page_type == 'search' -%}
+                    {%- unless collection.handle contains 'all' or request.page_type == 'search' -%}
                       {%- continue -%}
                     {%- endunless -%}
                   {%- endif -%}
