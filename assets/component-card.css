@@ -501,32 +501,42 @@
 /* 3. Transform the flat rectangular button into a clean floating circle */
 .card__content .quick-add .button,
 .card__content .product-form__submit {
-  width: 44px !important;
+  width: 44px !important; /* Start as a circle */
   height: 44px !important;
-  min-width: 44px !important;
   min-height: 44px !important;
-  border-radius: 50% !important; /* Forces perfect circle */
-  background-color: #ffffff !important; /* White background like Horizon */
-  color: #000000 !important; /* Black icon color */
+  border-radius: 22px !important; /* Half of height for perfect circle */
+  background-color: #ffffff !important;
+  color: #000000 !important;
   border: 1px solid #e2e2e2 !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important; /* Elegant subtle shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
   
-  padding: 0 !important;
-  display: flex !important;
+  padding: 0 12px !important; /* Side padding ready for expansion */
+  display: inline-flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important; /* Align content to the left inside the pill */
+  overflow: hidden !important; /* Hides the text while narrow */
   cursor: pointer !important;
   
-  /* Initial hidden state for the hover effect */
+  /* Slide up and fade in trigger wrapper initialization */
   opacity: 0 !important;
   transform: translateY(5px) !important;
-  transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease !important;
+  
+  /* Smoothly transition everything: width, radius, and opacity */
+  transition: opacity 0.25s ease, transform 0.25s ease, width 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-radius 0.3s ease, background-color 0.2s ease !important;
 }
 
 /* 4. Hide the "ADD TO CART" text completely */
 .card__content .quick-add .button span,
 .card__content .product-form__submit span {
-  display: none !important;
+  display: inline-block !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  margin-left: 6px !important;
+  opacity: 0 !important;
+  white-space: nowrap !important;
+  transition: opacity 0.2s ease-in-out !important;
+  transition-delay: 0.05s; /* Delay text visibility slightly until wide enough */
 }
 
 /* 5. Ensure the inner SVG icon displays properly inside the circle */
