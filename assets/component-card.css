@@ -559,13 +559,17 @@
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
-.card-wrapper:hover .quick-add .button::before,.card-wrapper:hover .quick-add .button::after { display: none; }
+.card-wrapper .quick-add .button::before,.card-wrapper .quick-add .button::after { display: none; }
 
 /* 7. Quick action button state changes */
 .card__content .quick-add .button:hover,
 .card__content .product-form__submit:hover {
-  background-color: #000000 !important; /* Inverts color cleanly on hover */
-  color: #ffffff !important;
+  max-width: 100px !important; /* Unlock maximum boundary width */
+  width: auto !important;
+  border-radius: 24px !important; 
+  padding: 0 14px !important;   /* Give structural breathing room inside the pill */
+  justify-content: flex-start !important;
+  background-color: #ffffff !important; /* Keep white frame background */
 }
 
 .card__content .quick-add .button:hover svg {
