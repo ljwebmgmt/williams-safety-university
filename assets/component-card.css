@@ -574,8 +574,11 @@
   width: auto !important;
   border-radius: 24px !important; 
   padding: 0 14px !important;   
-  justify-content: flex-start !important; /* Shifts contents to line up left-to-right */
+  justify-content: flex-start !important; 
   background-color: #ffffff !important; 
+  
+  /* Deepens the shadow subtly on interactive focus */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 10px 24px rgba(0, 0, 0, 0.16) !important;
 }
 
 .card__content .quick-add .button:hover svg {
