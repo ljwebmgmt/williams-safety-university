@@ -581,8 +581,10 @@
   stroke: #ffffff !important;
 }
 
-.card-wrapper:hover .quick-add .button span.btn-text,
-.card-wrapper:hover .product-form__submit span.btn-text,
-.card:hover .quick-add .button span.btn-text {
+.card__content .quick-add .button:hover .btn-text,
+.card__content .product-form__submit:hover .btn-text {
+  visibility: visible !important; /* Instantly restore rendering bounds */
   opacity: 1 !important;
+  max-width: 50px !important; /* Smoothly rolls open to full width */
+  margin-left: 6px !important; /* Adds standard spacing away from the bag SVG */
 }
