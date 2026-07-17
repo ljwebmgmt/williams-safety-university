@@ -207,10 +207,6 @@
               </div>
             {%- endif -%}
           </div>
-          <div class="rating"><span>(4.8)</span>{% for i in (1..5) %}{% render 'icon-star' %}{% endfor %}</div>
-          <div class="duration">
-            Course Duration: {% render 'icon-clock' %} {{ card_product.metafields.custom.course_duration }} Hours
-          </div>
         </div>
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
