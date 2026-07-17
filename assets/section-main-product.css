@@ -1640,5 +1640,5 @@ body { font-size: 14px; }
     height: fit-content !important;
   }
   
-  .main-product-wrapper .product__info-wrapper .global-media-settings { border: none; }
+  .main-product-wrapper .product__media-wrapper .product-media-container { border: none; }
 }
