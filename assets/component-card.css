@@ -526,8 +526,8 @@
 }
 
 /* 4. Hide the "ADD TO CART" text completely */
-.card__content .quick-add .button span,
-.card__content .product-form__submit span {
+.card__content .quick-add .button span.btn-text,
+.card__content .product-form__submit span.btn-text {
   display: inline-block !important;
   font-size: 14px !important;
   font-weight: 500 !important;
