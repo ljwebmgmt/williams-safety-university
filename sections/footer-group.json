@@ -31,28 +31,17 @@
             "image": "shopify://shop_images/william-safety-logo-removebg-preview.png",
             "footer_description": "<p>Educational Services Provided in Partnership with <a href=\"https://hazwoper-osha.com/affiliation-private-label-on-demand\" target=\"_blank\" title=\"https://hazwoper-osha.com/affiliation-private-label-on-demand\"><strong>HAZWOPER-OSHA Training, LLC</strong></a></p>",
             "image_width": 175,
-            "alignment": "",
-            "mob-alignment": "mob-left",
+            "alignment": "center",
+            "mob-alignment": "mob-center",
             "image_invert": true,
             "image_copyright": true,
-            "show_social_image": false,
-            "block_width_image": 50
-          }
-        },
-        "brand_information_Bzn4Yp": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true,
-            "block_width_brand": 50,
-            "footer_logo_link": "",
-            "footer_logo_link2": "",
-            "footer_logo3": "<a href=\"https://www.shopify.com/security/pci-compliant?utm_medium=shop&utm_source=secure\" title=\"This online store is secured by Shopify\" target=\"_blank\" rel=\"nofollow\">\n                          <img src=\"https://cdn.shopify.com/s/images/badges/shopify-secure-badge-white.svg\" alt=\"Shopify secure badge\">\n                        </a>"
+            "show_social_image": true,
+            "block_width_image": 100
           }
         }
       },
       "block_order": [
-        "image_G97Knx",
-        "brand_information_Bzn4Yp"
+        "image_G97Knx"
       ],
       "settings": {
         "color_scheme": "scheme-4",
