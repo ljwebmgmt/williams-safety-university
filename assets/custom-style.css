@@ -1334,5 +1334,5 @@ ul.footer_logos {
 }
 .herosection-slider .ss-slideshow .banner__buttons .button { background-color: transparent; border-color: #fff; }
 .footer-block .footer-block-image { justify-content: center; align-items: center; }
-.scormcollectionlist .button, .multicolumn .button,.scormfeaturedcollection .button { background-color: #000 !important; border-color: #121212 !important; width: inherit !important; }
-.scormcollectionlist .button:hover, .multicolumn .button:hover { background: transparent !important; color: #000 !important; }
+.scormcollectionlist .button, .multicolumn .button,.scormfeaturedcollection .button { background-color: #000 !important; border-color: #121212 !important; width: inherit !important; text-transform: uppercase; }
+.scormcollectionlist .button:hover, .multicolumn .button:hover,.scormfeaturedcollection .button:hover { background: transparent !important; color: #000 !important; }
