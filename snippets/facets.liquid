@@ -1272,6 +1272,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     statusText.textContent = 'Searching...';
 
+    if (sidebarFiltersForm) {
+      sidebarFiltersForm.style.opacity = '0.15'; // Keep a subtle faded look or set to '0' to hide completely
+      sidebarFiltersForm.style.pointerEvents = 'none'; // Lock them out from being clicked
+    }
+
     // Fetch the standard search results page without demanding a specific section
     const searchUrl = `/search?q=*${encodeURIComponent(searchTerm)}*&type=product&view=ajax`;
 
